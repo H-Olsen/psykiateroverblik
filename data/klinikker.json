@@ -1,0 +1,21 @@
+[
+  {
+    "navn": "Carelink Psykiatri",
+    "afdelinger": "",
+    "laeger": [
+      "Annamaria Molnar",
+      "Laura Aakjær Jensen",
+      "Bettina Lodskou Pedersen"
+    ],
+    "region": "Sjælland",
+    "by": "Kongens Lyngby",
+    "adresse": "Klampenborgvej 248, 1. sal. mf",
+    "hjemmeside": "https://mensana.dk/",
+    "priser": "https://mensana.dk/priser-betaling/",
+    "nationaltOptag": true,
+    "selvbetaler": true,
+    "adhd": false,
+    "autisme": false,
+    "boernUnge": false
+  }
+]

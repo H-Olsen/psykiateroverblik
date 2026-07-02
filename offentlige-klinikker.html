@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Offentlige psykiatere | Psykiater Overblik</title>
+    <meta name="description" content="Søg og filtrér offentlige psykiatriske tilbud efter region, by, henvisning, akut hjælp, voksne, børn/unge, ADHD og autisme.">
+    <meta property="og:title" content="Offentlige psykiatere | Psykiater Overblik">
+    <meta property="og:description" content="En separat oversigt til offentlige psykiatriske tilbud i Danmark.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/offentlige-klinikker.html">
+    <meta property="og:image" content="https://example.com/assets/hero-psykiater-overblik.jpg">
+    <link rel="canonical" href="https://example.com/offentlige-klinikker.html">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google AdSense placeholder:
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+    -->
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#indhold">Spring til indhold</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Psykiater Overblik forside">
+          <span class="brand-mark" aria-hidden="true">PO</span>
+          <span>Psykiater Overblik</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="nav-toggle-line"></span>
+          <span class="visually-hidden">Åbn menu</span>
+        </button>
+        <nav class="primary-nav" id="primary-navigation" aria-label="Primær navigation">
+          <a href="index.html">Forside</a>
+          <a href="offentlige-klinikker.html">Offentlige psykiatere</a>
+          <a href="klinikker.html">Private psykiatere</a>
+          <a href="boern-unge-psykiatere.html">Børn/unge</a>
+          <a href="information.html">Information</a>
+          <a href="krisehjaelp.html">Krisehjælp</a>
+          <a href="problemstillinger.html">Ressourcer</a>
+          <a href="om-os.html">Om</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="indhold" class="page-main">
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Offentlige psykiatere</p>
+          <h1>Find og filtrér offentlige psykiatere</h1>
+          <p>Brug denne side til offentlige psykiatriske afdelinger, ambulatorier eller regionale tilbud, når datafilen er udfyldt.</p>
+        </div>
+      </section>
+
+      <!-- Annonceplads over filtrene kan indsættes her senere.
+      <ins class="adsbygoogle" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000009"></ins>
+      -->
+
+      <section class="section">
+        <div class="container">
+          <form class="filters" id="clinic-filters" aria-label="Filtrér offentlige klinikker" data-source="data/offentlige-klinikker.json" data-kind="public" data-singular="offentligt tilbud" data-plural="offentlige tilbud" data-empty="Ingen offentlige tilbud matcher filtrene.">
+            <div class="field field-wide">
+              <label for="search">Søg</label>
+              <input id="search" name="search" type="search" placeholder="Søg på tilbud, region, by, adresse eller noter">
+            </div>
+            <div class="field">
+              <label for="region">Region</label>
+              <select id="region" name="region">
+                <option value="">Alle regioner</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="city">By</label>
+              <select id="city" name="city">
+                <option value="">Alle byer</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="akutmodtagelse">Akut hjælp</label>
+              <select id="akutmodtagelse" name="akutmodtagelse">
+                <option value="">Alle</option>
+                <option value="ja">Ja</option>
+                <option value="nej">Nej</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="henvisning">Henvisning</label>
+              <select id="henvisning" name="henvisning">
+                <option value="">Alle</option>
+                <option value="ja">Ja</option>
+                <option value="nej">Nej</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="voksne">Voksne</label>
+              <select id="voksne" name="voksne">
+                <option value="">Alle</option>
+                <option value="ja">Ja</option>
+                <option value="nej">Nej</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="boernUnge">Børn/unge</label>
+              <select id="boernUnge" name="boernUnge">
+                <option value="">Alle</option>
+                <option value="ja">Ja</option>
+                <option value="nej">Nej</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="adhd">ADHD</label>
+              <select id="adhd" name="adhd">
+                <option value="">Alle</option>
+                <option value="ja">Ja</option>
+                <option value="nej">Nej</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="autisme">Autisme</label>
+              <select id="autisme" name="autisme">
+                <option value="">Alle</option>
+                <option value="ja">Ja</option>
+                <option value="nej">Nej</option>
+              </select>
+            </div>
+            <div class="filter-actions">
+              <button class="button button-secondary" id="reset-filters" type="button">Nulstil filtre</button>
+            </div>
+          </form>
+
+          <div class="result-bar" aria-live="polite">
+            <p id="result-count">Indlæser offentlige tilbud...</p>
+          </div>
+
+          <div class="table-wrap" aria-label="Offentlige psykiatere vist som tabel">
+            <table class="clinic-table">
+              <thead>
+                <tr>
+                  <th>Tilbud</th>
+                  <th>Type</th>
+                  <th>Region</th>
+                  <th>By/område</th>
+                  <th>Adresse/område</th>
+                  <th>Hjemmeside</th>
+                  <th>Akut hjælp</th>
+                  <th>Henvisning</th>
+                  <th>Voksne</th>
+                  <th>Børn/unge</th>
+                  <th>ADHD</th>
+                  <th>Autisme</th>
+                  <th>Noter</th>
+                </tr>
+              </thead>
+              <tbody id="clinic-table-body"></tbody>
+            </table>
+          </div>
+
+          <div class="clinic-cards" id="clinic-card-list" aria-label="Offentlige psykiatere vist som kort"></div>
+
+          <p class="small-note">Oplysninger bør altid kontrolleres hos den relevante region eller afdeling, før brugeren handler på dem.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Psykiater Overblik</strong>
+          <p>Uafhængigt overblik over private og offentlige psykiatriske tilbud i Danmark.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="privatlivspolitik.html">Privatlivspolitik</a>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="krisehjaelp.html">Akut hjælp</a>
+          <a href="problemstillinger.html">Ressourcer</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
