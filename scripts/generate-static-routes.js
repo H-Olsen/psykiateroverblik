@@ -3,6 +3,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const siteUrl = "https://h-olsen.github.io/psykiateroverblik";
+const supportUrl = "https://buymeacoffee.com/psykiateroverblik";
 
 const problemPages = [
   ["akut-krise", "Akut krise"],
@@ -133,6 +134,7 @@ function nav(fromRoute) {
               <a href="${routeHref(fromRoute, "om/disclaimer")}">Disclaimer</a>
               <a href="${routeHref(fromRoute, "om/kontakt")}">Kontakt</a>
               <a href="${routeHref(fromRoute, "om/privatlivspolitik")}">Privatlivspolitik</a>
+              <a href="${routeHref(fromRoute, "om/stoet-siden")}">Støt siden</a>
             </div>
           </div>
           <div class="nav-group">
@@ -196,6 +198,7 @@ ${page.body}
           <a href="${routeHref(fromRoute, "om/disclaimer")}">Disclaimer</a>
           <a href="${routeHref(fromRoute, "om/privatlivspolitik")}">Privatlivspolitik</a>
           <a href="${routeHref(fromRoute, "brug-for-hjaelp-nu")}">Brug for hjælp NU</a>
+          <a href="${supportUrl}" target="_blank" rel="noopener noreferrer">Støt siden</a>
         </nav>
       </div>
     </footer>
@@ -490,7 +493,8 @@ function buildPages() {
     ["Motivation", "Hvorfor siden findes.", "om/motivation"],
     ["Disclaimer", "Vigtige forbehold om information og akut hjælp.", "om/disclaimer"],
     ["Kontakt", "Kontaktinformation kommer senere.", "om/kontakt"],
-    ["Privatlivspolitik", "Foreløbig privatlivstekst.", "om/privatlivspolitik"]
+    ["Privatlivspolitik", "Foreløbig privatlivstekst.", "om/privatlivspolitik"],
+    ["Støt siden", "Støt arbejdet med Psykiater Overblik via Buy Me a Coffee.", "om/stoet-siden"]
   ], true), "Om");
   writeSimplePage("om/motivation", "Motivation", "Denne side er under opbygning.", placeholder("Motivation"), "Om");
   writeSimplePage("om/disclaimer", "Disclaimer", "Vigtige forbehold om Psykiater Overblik.", `
@@ -503,6 +507,16 @@ function buildPages() {
           <div class="placeholder-note">
             <p>Siden indsamler ikke følsomme helbredsoplysninger via formularer. Hvis der senere tilføjes analytics, cookies eller reklamer, bør denne tekst gennemgås og opdateres, før løsningen offentliggøres bredt.</p>
           </div>`, "Om");
+  writeSimplePage("om/stoet-siden", "Støt siden", "Psykiater Overblik er et uafhængigt informationssite. Du kan støtte arbejdet via Buy Me a Coffee.", `
+          <div class="resource-card">
+            <h2>Støt Psykiater Overblik</h2>
+            <p>Hvis siden hjælper dig, kan du støtte det videre arbejde med vedligeholdelse, struktur og kvalitetssikring. Støtte er frivillig og giver ikke adgang til rådgivning eller prioriteret hjælp.</p>
+            <a class="button button-primary" href="${supportUrl}" target="_blank" rel="noopener noreferrer">Støt via Buy Me a Coffee</a>
+          </div>
+          <aside class="disclaimer spaced">
+            <strong>Vigtig information</strong>
+            <p>Psykiater Overblik er et uafhængigt informationssite og erstatter ikke læge, akut hjælp eller professionel rådgivning.</p>
+          </aside>`, "Om", "Støt Psykiater Overblik via Buy Me a Coffee.");
 
   writeSimplePage("brug-for-hjaelp-nu", "Brug for hjælp NU / krise", "Side til akutte situationer og hurtige indgange.", `
           <aside class="crisis-box">
