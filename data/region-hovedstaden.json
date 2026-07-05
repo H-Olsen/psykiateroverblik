@@ -1,0 +1,266 @@
+[
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Akuttelefonen 1813",
+    "adgang": "1813",
+    "krav": "Ingen henvisning; ved akut psykiatrisk hjælp i Region Hovedstaden",
+    "kilde": "https://www.regionh.dk/sundhed/akut/sider/psykiatri.aspx",
+    "note": "Ring 112 ved livsfare eller akut selvmordsfare"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Alarmcentralen",
+    "adgang": "112",
+    "krav": "Ved livstruende akut situation",
+    "kilde": "https://www.regionh.dk/sundhed/akut/sider/psykiatri.aspx",
+    "note": "Ikke et psykiatrisk rådgivningstilbud, men skal stå øverst ved akut fare"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Døgnåbne psykiatriske akutmodtagelser",
+    "adgang": "Samlet oversigt",
+    "krav": "Ingen henvisning; akut psykiatrisk hjælp",
+    "kilde": "https://www.psykiatri-regionh.dk/psykiatriguiden-hjaelp-til-patienter-og-paaroerende/jeg-har-brug-for-hjaelp/jeg-har-brug-for-hjaelp-nu/doegnaabne-psykiatriske-akutmodtagelser/sider/default.aspx",
+    "note": "Samlet Region H-side"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Akutmodtagelse Amager",
+    "adgang": "38 64 16 50",
+    "krav": "Ingen henvisning; akut psykiatrisk hjælp",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/psykiatriske-centre/psykiatrisk%20center%20amager/undersoegelse-og-behandling/akut-hjaelp/sider/psykiatrisk-akutmodtagelse.aspx",
+    "note": "Døgnåben"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Akutmodtagelse Ballerup",
+    "adgang": "38 64 50 03",
+    "krav": "Ingen henvisning; akut psykiatrisk hjælp",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/psykiatriske-centre/psykiatrisk%20center%20ballerup/undersoegelse-og-behandling/akutmodtagelse/sider/default.aspx",
+    "note": "Døgnåben"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Akutmodtagelse Glostrup",
+    "adgang": "38 64 06 71",
+    "krav": "Ingen tid eller henvisning nødvendig",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/psykiatriske-centre/psykiatrisk-center-glostrup/undersoegelse-og-behandling/afsnit/sider/psykiatrisk-akutmodtagelse.aspx",
+    "note": "Døgnåben"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Akutmodtagelse København / Bispebjerg",
+    "adgang": "38 64 73 60",
+    "krav": "Direkte henvendelse uden henvisning",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/psykiatriske-centre/psykiatrisk-center-koebenhavn/undersoegelse-og-behandling/psykiatrisk-akutmodtagelse/sider/default.aspx",
+    "note": "Døgnåben"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Akutmodtagelse Nordsjælland / Hillerød",
+    "adgang": "38 64 32 00",
+    "krav": "Ingen henvisning; akut psykiatrisk hjælp",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/psykiatriske-centre/psykiatrisk-center-nordsjaelland/undersoegelse-og-behandling/akut-psykiatrisk-behandling/sider/default.aspx",
+    "note": "Døgnåben"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Børne- og Ungdomspsykiatrisk Akutmodtagelse",
+    "adgang": "38 64 06 71",
+    "krav": "Akut hjælp til børn og unge; Region H anbefaler at ringe først",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/psykiatriske-centre/boerne-og-ungdomspsykiatrisk-center/undersoegelse-og-behandling/sider/psykiatrisk-akutmodtagelse.aspx",
+    "note": "For børn og unge under 18 år"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Bornholm: akut psykiatrisk hjælp",
+    "adgang": "1813",
+    "krav": "Region H angiver, at Bornholm ikke har særskilt psykiatrisk akutmodtagelse",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/psykiatriske-centre/boerne-og-ungdomspsykiatrisk-center/undersoegelse-og-behandling/sider/psykiatrisk-akutmodtagelse.aspx",
+    "note": "Tjek evt. Bornholms Hospital / 1813"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Akutteam - APH, Psykiatrisk Center Amager",
+    "adgang": "24 95 88 46",
+    "krav": "Akutteam; tjek optageområde/adgang på siden",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/psykiatriske-centre/psykiatrisk%20center%20amager/undersoegelse-og-behandling/akut-hjaelp/sider/akut-team---aph.aspx",
+    "note": "Telefontid ifølge siden: alle dage kl. 9-18"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Akutteam, Psykiatrisk Center Nordsjælland",
+    "adgang": "Se side",
+    "krav": "Akutteam; supplerende akut psykiatrisk tilbud",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/psykiatriske-centre/psykiatrisk-center-nordsjaelland/undersoegelse-og-behandling/akut-psykiatrisk-behandling/sider/akutteam.aspx",
+    "note": "Marker som gråzone: kan være knyttet til akut vurdering/optageområde"
+  },
+  {
+    "problemstilling": "Generel Patientstøtte",
+    "tilbud": "PsykInfo rådgivning",
+    "adgang": "38 64 13 00",
+    "krav": "Gratis og anonym rådgivning; uden henvisning",
+    "kilde": "https://www.psykiatri-regionh.dk/psykinfo/raadgivning/sider/default.aspx",
+    "note": "Meget relevant til din side"
+  },
+  {
+    "problemstilling": "Generel Patientstøtte",
+    "tilbud": "PsykInfo",
+    "adgang": "38 64 13 00",
+    "krav": "Information og rådgivning om psykisk sygdom",
+    "kilde": "https://www.psykiatri-regionh.dk/psykinfo/sider/default.aspx",
+    "note": "Hovedside"
+  },
+  {
+    "problemstilling": "Generel Patientstøtte",
+    "tilbud": "PsykInfo arrangementer",
+    "adgang": "Tilmelding via siden",
+    "krav": "Åbne arrangementer; ofte gratis",
+    "kilde": "https://www.psykiatri-regionh.dk/psykinfo/arrangementer/sider/default.aspx",
+    "note": "Ikke akut hjælp"
+  },
+  {
+    "problemstilling": "Generel Patientstøtte",
+    "tilbud": "Psykiatriguiden",
+    "adgang": "Online guide",
+    "krav": "Information til patienter og pårørende",
+    "kilde": "https://www.psykiatri-regionh.dk/psykiatriguiden-hjaelp-til-patienter-og-paaroerende/sider/default.aspx",
+    "note": "Ikke rådgivning, men god samlet guide"
+  },
+  {
+    "problemstilling": "Digital hjælp",
+    "tilbud": "Internetpsykiatrien",
+    "adgang": "Online ansøgning / 99 44 95 50",
+    "krav": "Gratis online behandling; kræver ikke lægehenvisning; voksne",
+    "kilde": "https://internetpsykiatrien.dk/",
+    "note": "Fællesregionalt tilbud, ikke kun Region H"
+  },
+  {
+    "problemstilling": "Digital hjælp",
+    "tilbud": "Internetpsykiatrien ansøgning",
+    "adgang": "Online ansøgning",
+    "krav": "Ansøgning uden henvisning",
+    "kilde": "https://internetpsykiatrien.dk/ansoegning/",
+    "note": "For let/moderat angst/depression; evt. på diagnosesiden"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Kompetencecenter for Selvmordsforebyggelse, voksne",
+    "adgang": "38 64 18 00",
+    "krav": "For voksne med selvmordstanker/-adfærd, som ikke i forvejen er i relevant psykiatrisk behandling",
+    "kilde": "https://www.psykiatri-regionh.dk/selvmordsforebyggelse",
+    "note": "Ikke akut; ved akut fare brug 112/1813/akutmodtagelse"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Kompetencecenter for Selvmordsforebyggelse: voksne",
+    "adgang": "38 64 18 00",
+    "krav": "Voksne fra 18 år; Region H-bopæl",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/kompetencecentre/selvmordsforebyggelse/har-du-selvmordstanker/sider/voksne-%28fra-18-%C3%A5r%29.aspx",
+    "note": "Samtaleterapi og internetbaseret terapi"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Mit Liv",
+    "adgang": "Kontakt via Kompetencecenter for Selvmordsforebyggelse",
+    "krav": "Internetbaseret terapi ved selvmordstanker/-forsøg",
+    "kilde": "https://www.psykiatri-regionh.dk/psykiatriguiden-hjaelp-til-patienter-og-paaroerende/jeg-har-brug-for-hjaelp/jeg-har-brug-for-hjaelp-nu/ring-112/har-du-planer-om-selvmord/sider/default.aspx",
+    "note": "For voksne i Region Hovedstaden"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Klinik for Selvmordsforebyggelse, børn og unge",
+    "adgang": "38 64 07 40",
+    "krav": "Rådgivning/vurdering vedrørende børn og unge med selvmordsadfærd",
+    "kilde": "https://www.sundhed.dk/sundhedsfaglig/information-til-praksis/hovedstaden/almen-praksis/patientbehandling/patientforloeb/forloebsbeskrivelser-efter-speciale/psykiatri/skyggeside-selvmordsforebyggelse-boern-og-unge/",
+    "note": "Ikke ren Region H-side, men sundhed.dk-forløbsbeskrivelse for Hovedstaden"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "Kompetencecenter for Selvmordsforebyggelse: pårørende og efterladte",
+    "adgang": "Se side",
+    "krav": "Pårørende/efterladte ved selvmordstanker eller selvmord",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/kompetencecentre/selvmordsforebyggelse/er-du-paaroerende-eller-efterladt/sider/default.aspx",
+    "note": "Ved akut fare: akutmodtagelse/1813/112"
+  },
+  {
+    "problemstilling": "LGBT+ / køn / seksualitet",
+    "tilbud": "Sexologisk Klinik telefonrådgivning",
+    "adgang": "38 64 71 71",
+    "krav": "Anonym telefonrådgivning om almene seksuelle problemer",
+    "kilde": "https://www.psykiatri-regionh.dk/psykiatriguiden-hjaelp-til-patienter-og-paaroerende/hverdagen-med-psykisk-sygdom-og-saarbarhed/mit-vigtige-hverdagsliv/naar-din-seksualitet-forandrer-sig/sider/hvor-kan-jeg-faa-hjaelp-hvis-jeg-oplever-seksuelle-udfordringer.aspx",
+    "note": "Onsdag kl. 10-11 ifølge Region H-side"
+  },
+  {
+    "problemstilling": "LGBT+ / køn / seksualitet",
+    "tilbud": "Sexologisk Klinik",
+    "adgang": "Se side",
+    "krav": "Anonym kontakt ved sexologiske spørgsmål",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/psykiatriske-centre/psykiatrisk-center-koebenhavn/undersoegelse-og-behandling/sexologisk-klinik/sider/default.aspx",
+    "note": "Hovedside"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Bryd Cirklen",
+    "adgang": "65 909 909",
+    "krav": "Anonym rådgivning for voksne med seksuelle tanker om børn",
+    "kilde": "https://www.psykiatri-regionh.dk/bryd-cirklen/kontakt-raadgivningen/sider/default.aspx",
+    "note": "Forebyggelse af seksuelle overgreb"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Bryd Cirklen chat",
+    "adgang": "Chat via siden",
+    "krav": "Anonym chatrådgivning",
+    "kilde": "https://www.psykiatri-regionh.dk/bryd-cirklen/kontakt-raadgivningen/chat/sider/default.aspx",
+    "note": "Samme tilbud, anden adgang"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Seksuelle Overgreb, Rigshospitalet",
+    "adgang": "35 45 50 32",
+    "krav": "Akut henvendelse efter seksuelt overgreb; unge/voksne fra 16 år i Region Hovedstaden",
+    "kilde": "https://www.rigshospitalet.dk/afdelinger-og-klinikker/julianemarie/center-for-seksuelle-overgreb/undersoegelse-og-behandling/sider/hvornaar-kan-jeg-kontakte-center-for-seksuelle-overgreb.aspx",
+    "note": "Ring hele døgnet ved overgreb inden for seneste 7 døgn"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Seksuelle Overgreb rådgivning",
+    "adgang": "35 45 40 85",
+    "krav": "Rådgivning efter seksuelt overgreb",
+    "kilde": "https://www.rigshospitalet.dk/afdelinger-og-klinikker/julianemarie/center-for-seksuelle-overgreb/kontakt/sider/default.aspx",
+    "note": "Psykolog/socialrådgiver-rådgivning"
+  },
+  {
+    "problemstilling": "Væresteder og fællesskaber",
+    "tilbud": "Skolen for Recovery",
+    "adgang": "Tilmelding via siden",
+    "krav": "Gratis kurser; målgruppe patienter, pårørende og medarbejdere i Region Hovedstadens Psykiatri",
+    "kilde": "https://www.psykiatri-regionh.dk/skolen-for-recovery",
+    "note": "Gråzone: ikke for alle borgere, men pårørende kan være relevante"
+  },
+  {
+    "problemstilling": "Væresteder og fællesskaber",
+    "tilbud": "Skolen for Recovery tilmelding",
+    "adgang": "Tilmelding via siden",
+    "krav": "Gratis kurser",
+    "kilde": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/skolen-for-recovery/tilmelding/sider/default.aspx",
+    "note": "Medtag evt. under “pårørende/patientstøtte”"
+  },
+  {
+    "problemstilling": "Andet / særlige målgrupper",
+    "tilbud": "Region H rådgivningstelefon for ukrainere",
+    "adgang": "38 64 13 00",
+    "krav": "Rådgivning for ukrainere / personer berørt af krig i Ukraine",
+    "kilde": "https://www.psykiatri-regionh.dk/sider/r%C3%A5dgivningstelefon-%C3%A5ben-for-ukrainere.aspx",
+    "note": "Særlig målgruppe; samme nummer som PsykInfo/rådgivning"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Center for Visitation og Diagnostik",
+    "adgang": "CVD / se side",
+    "krav": "Primært visitation/henvisning; ikke almindeligt åbent borgerstøttetilbud",
+    "kilde": "https://www.psykiatri-regionh.dk/kontakt-cvd",
+    "note": "Medtag kun hvis du laver system-/henvisningsside"
+  }
+]

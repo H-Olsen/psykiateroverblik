@@ -1,0 +1,362 @@
+[
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Alarmcentralen",
+    "adgang": "112",
+    "krav": "Ved akut livsfare eller akut fare for sig selv/andre",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/akuthjaelp",
+    "note": "Skal stå øverst ved akut fare"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Lægevagten Region Syddanmark",
+    "adgang": "70 11 07 07",
+    "krav": "Uden for egen læges åbningstid; akut sygdom der ikke kan vente",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/akuthjaelp/laegevagt-i-region-syddanmark/laegevagten",
+    "note": "Fra 1. december 2025 også indgang til akut psykiatrisk hjælp"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Akut psykiatrisk hjælp via 112 og lægevagten",
+    "adgang": "112 / 70 11 07 07",
+    "krav": "Akut psykisk krise; kan stille videre til psykiatrifagligt personale",
+    "kilde": "https://regionsyddanmark.dk/om-region-syddanmark/presse-og-nyheder/nyhedsarkiv/2025/september-2025/region-syddanmark-styrker-telefonisk-hjaelp-til-borgere-i-akut-psykisk-krise",
+    "note": "Kernefund; ny samlet telefonisk indgang fra 1. december 2025"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Akut hjælp og behandling i psykiatrisk akutmodtagelse",
+    "adgang": "Samlet oversigt",
+    "krav": "Døgnåbne psykiatriske akutmodtagelser",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/akuthjaelp/akut-hjaelp-og-behandling-i-psykiatrisk-akutmodtagelse",
+    "note": "Samlet Region Syddanmark-side"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Akutmodtagelse Odense",
+    "adgang": "99 44 91 40",
+    "krav": "Døgnåben; alle aldersgrupper, både voksne, børn og unge",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/akuthjaelp/akut-hjaelp-og-behandling-i-psykiatrisk-akutmodtagelse",
+    "note": "Adresse: J. B. Winsløvs Vej 22B, indgang 224, 5000 Odense C"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Akutmodtagelse Esbjerg",
+    "adgang": "99 44 67 00",
+    "krav": "Døgnåben; kun voksne",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/akuthjaelp/akut-hjaelp-og-behandling-i-psykiatrisk-akutmodtagelse",
+    "note": "Adresse: Gl. Vardevej 101, 6715 Esbjerg N"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Akutmodtagelse Vejle",
+    "adgang": "99 44 77 90",
+    "krav": "Døgnåben; kun voksne",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/akuthjaelp/akut-hjaelp-og-behandling-i-psykiatrisk-akutmodtagelse",
+    "note": "Adresse: Nordbanen 5, 7100 Vejle"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Akutmodtagelse Aabenraa",
+    "adgang": "99 44 56 59",
+    "krav": "Døgnåben for voksne; børn og unge kl. 8-18",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/akuthjaelp/akut-hjaelp-og-behandling-i-psykiatrisk-akutmodtagelse",
+    "note": "Adresse: Kresten Philipsens Vej 15, 6200 Aabenraa"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Børn og unge akut psykiatrisk hjælp i Odense",
+    "adgang": "99 44 91 40",
+    "krav": "Akut psykiatrisk hjælp til børn og unge",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/akuthjaelp/akut-hjaelp-og-behandling-i-psykiatrisk-akutmodtagelse",
+    "note": "Odense tager alle aldersgrupper"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Børn og unge akut psykiatrisk hjælp i Aabenraa",
+    "adgang": "99 44 56 59",
+    "krav": "Børn og unge kun kl. 8-18",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/akuthjaelp/akut-hjaelp-og-behandling-i-psykiatrisk-akutmodtagelse",
+    "note": "Tjek akut adgang uden for kl. 8-18 via 112/lægevagt"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "PsykInfo Region Syddanmark",
+    "adgang": "99 44 45 46",
+    "krav": "Åben anonym rådgivning for alle borgere og pårørende",
+    "kilde": "https://psykinfo.regionsyddanmark.dk/",
+    "note": "Kernefund"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "PsykInfo telefonrådgivning",
+    "adgang": "99 44 45 46",
+    "krav": "Alle kan henvende sig med spørgsmål om psykiatri og psykisk sygdom",
+    "kilde": "https://psykinfo.regionsyddanmark.dk/radgivning-om-psykisk-sygdom/telefonradgivning",
+    "note": "Man-fre; torsdag længere åbent"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "PsykInfo i Vejle",
+    "adgang": "Fremmøde / 99 44 45 46",
+    "krav": "Åben rådgivning i Vejle; anonym rådgivning",
+    "kilde": "https://psykinfo.regionsyddanmark.dk/kontakt-psykinfo",
+    "note": "Fysisk fremmøde kan variere i juli/ferier; tjek siden"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "PsykInfo rådgivning tæt på dig",
+    "adgang": "Fremmøde uden tidsbestilling",
+    "krav": "Gratis anonym rådgivning i lokalpsykiatrien 12 steder i regionen",
+    "kilde": "https://psykinfo.regionsyddanmark.dk/radgivning-om-psykisk-sygdom/radgivning-taet-pa-dig",
+    "note": "Kernefund; man kan møde op i åbningstiden uden at bestille tid"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "PsykInfo Brørup",
+    "adgang": "Fremmøde uden tidsbestilling",
+    "krav": "Gratis anonym rådgivning i lokalpsykiatri",
+    "kilde": "https://psykinfo.regionsyddanmark.dk/radgivning-om-psykisk-sygdom/radgivning-taet-pa-dig",
+    "note": "Tjek aktuelle datoer/tider på siden"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "PsykInfo Esbjerg",
+    "adgang": "Fremmøde uden tidsbestilling",
+    "krav": "Gratis anonym rådgivning i lokalpsykiatri",
+    "kilde": "https://psykinfo.regionsyddanmark.dk/radgivning-om-psykisk-sygdom/radgivning-taet-pa-dig",
+    "note": "Tjek aktuelle datoer/tider på siden"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "PsykInfo arrangementer",
+    "adgang": "Tilmelding via siden",
+    "krav": "Arrangementer om psykisk sygdom",
+    "kilde": "https://psykinfo.regionsyddanmark.dk/arrangementer",
+    "note": "Åbent informations-/arrangementstilbud"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "Patientkontoret Region Syddanmark",
+    "adgang": "76 63 14 90",
+    "krav": "Patientrettigheder og vejledning",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/patientrettigheder/patientkontoret-hjaelp-til-patienter",
+    "note": "Gråzone; ikke specifikt psykisk krisehjælp"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "Patientkontoret - psykiatri",
+    "adgang": "76 63 10 98",
+    "krav": "Vejledning om psykiatri/mental health-spørgsmål",
+    "kilde": "https://en.regionsyddanmark.dk/healthcare/the-regional-patient-office",
+    "note": "Kernefund under patientstøtte; engelsk side nævner særskilt psykiatrinummer"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "Kontor for Sygehusvalg",
+    "adgang": "76 63 14 75",
+    "krav": "Hjælp ved ret til udvidet frit sygehusvalg/hurtigere tid",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/patientrettigheder/udredning-og-behandling/ret-til-hurtig-udredning/kontor-for-sygehusvalg",
+    "note": "Gråzone; relevant hvis borger venter på udredning/behandling"
+  },
+  {
+    "problemstilling": "Digital hjælp",
+    "tilbud": "Internetpsykiatrien",
+    "adgang": "Online ansøgning",
+    "krav": "Gratis online behandling for let/moderat angst og depression",
+    "kilde": "https://internetpsykiatrien.dk/",
+    "note": "Ikke kun Region Syddanmark, men relevant landsdækkende digital hjælp"
+  },
+  {
+    "problemstilling": "Digital hjælp",
+    "tilbud": "Center for Digital Psykiatri",
+    "adgang": "Online information",
+    "krav": "Udvikler digitale forebyggelses- og behandlingstilbud",
+    "kilde": "https://psykiatrienisyddanmark.dk/",
+    "note": "Gråzone; mere center/udvikling end direkte borgerlinje"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Psykiatrisk akutmodtagelse ved akut selvmordsfare",
+    "adgang": "Se akutmodtagelser / 112 / lægevagt",
+    "krav": "Akut selvmordsfare eller behov for akut vurdering",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/akuthjaelp/akut-hjaelp-og-behandling-i-psykiatrisk-akutmodtagelse",
+    "note": "Kernefund ved akut fare"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Center for selvmordsforebyggelse",
+    "adgang": "99 44 86 00",
+    "krav": "Regionalt videns- og udviklingscenter; ikke tydeligt åben borgerlinje",
+    "kilde": "https://ouh.dk/til-samarbejdspartnere/praksis/afdelingsoplysninger-til-almen-praksis-og-andre-sundhedsfaglige/center-for-selvmordsforebyggelse",
+    "note": "Gråzone; primært fagperson-/systemrettet side"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Selvmordsforebyggende behandlingstilbud i Region Syddanmark",
+    "adgang": "Via akutmodtagelse / egen læge",
+    "krav": "Behandlingstilbud findes, men adgang virker typisk via akutmodtagelse eller henvisning",
+    "kilde": "https://selvmordsforebyggelse.dk/selvmordstanker/behandlingstilbud/tilbud-i-region-syddanmark/",
+    "note": "Ekstern national oversigt; medtag evt. som supplerende kilde"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "PsykInfo rådgivning for pårørende",
+    "adgang": "99 44 45 46",
+    "krav": "Alle borgere og pårørende kan få anonym rådgivning",
+    "kilde": "https://psykinfo.regionsyddanmark.dk/radgivning-om-psykisk-sygdom/telefonradgivning",
+    "note": "Kernefund for pårørende"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "PsykInfo rådgivning tæt på dig",
+    "adgang": "Fremmøde uden tidsbestilling",
+    "krav": "Gratis anonym rådgivning; også relevant for pårørende",
+    "kilde": "https://psykinfo.regionsyddanmark.dk/radgivning-om-psykisk-sygdom/radgivning-taet-pa-dig",
+    "note": "Kernefund; anonym fysisk rådgivning i lokalpsykiatrien"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "Center for Pårørendeinddragelse - CEPI",
+    "adgang": "Online information",
+    "krav": "Videncenter om pårørendeinddragelse; primært fagpersonrettet",
+    "kilde": "https://psykiatrienisyddanmark.dk/",
+    "note": "Gråzone; ikke direkte rådgivningstilbud"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre - samlet Region Syddanmark",
+    "adgang": "Odense: 65 41 71 68 / Kolding: 76 36 31 96",
+    "krav": "Døgnåben personlig eller telefonisk henvendelse",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/akuthjaelp/seksuelle-overgreb-center-for-voldtaegtsofre",
+    "note": "Kernefund"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre Odense - akut",
+    "adgang": "65 41 71 68",
+    "krav": "Døgnåben; overgreb/voldtægt inden for seneste 7 dage",
+    "kilde": "https://ouh.dk/akut/center-for-voldtaegtsofre",
+    "note": "Ingen lægehenvisning; politianmeldelse ikke nødvendig"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre Odense - ikke akut",
+    "adgang": "30 57 09 22",
+    "krav": "Overgreb for mere end 7 dage siden; hverdage",
+    "kilde": "https://ouh.dk/til-patienter-og-parorende/odense/centre/center-for-voldtaegtsofre/kontakt",
+    "note": "Relevant til ikke-akut støtte efter overgreb"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre Odense - rådgivning",
+    "adgang": "30 57 67 40",
+    "krav": "Rådgivning for udsatte, pårørende og fagpersoner",
+    "kilde": "https://ouh.dk/til-patienter-og-parorende/odense/centre/center-for-voldtaegtsofre/kontakt",
+    "note": "Tirsdag og torsdag kl. 13-14 ifølge OUH"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre Kolding",
+    "adgang": "76 36 31 96",
+    "krav": "Hjælp hele døgnet og op til 7 døgn efter; direkte henvendelse i Akutafdelingen",
+    "kilde": "https://sygehuslillebaelt.dk/afdelinger/kolding-sygehus/kvindesygdomme-og-fodsler/patienter-og-parorende/center-for-voldtaegtsofre",
+    "note": "Kernefund"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre Kolding - åben psykologrådgivning",
+    "adgang": "76 36 25 15",
+    "krav": "Åben gratis rådgivning hos psykologer",
+    "kilde": "https://sygehuslillebaelt.dk/afdelinger/kolding-sygehus/kvindesygdomme-og-fodsler/patienter-og-parorende/center-for-voldtaegtsofre",
+    "note": "Tirsdag kl. 10.30-11.30 og onsdag kl. 10-11; tjek ferie/lukning"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre Kolding - psykologsamtaler",
+    "adgang": "76 36 25 40",
+    "krav": "Tid til samtaler med psykolog",
+    "kilde": "https://sygehuslillebaelt.dk/afdelinger/kolding-sygehus/kvindesygdomme-og-fodsler/patienter-og-parorende/center-for-voldtaegtsofre",
+    "note": "Sekretærer mandag-fredag kl. 8-9 ifølge siden"
+  },
+  {
+    "problemstilling": "LGBT+ / køn / seksualitet",
+    "tilbud": "Team for Sexologi, OUH",
+    "adgang": "99 44 94 00",
+    "krav": "Behandlingstilbud; adgangskrav ikke tydeligt åben borgeradgang",
+    "kilde": "https://ouh.dk/til-patienter-og-parorende/odense/afdelinger/psykiatrisk-behandling-for-voksne/odense-lokalpsykiatri",
+    "note": "Gråzone/udelad evt.; sandsynligvis henvisningsbaseret"
+  },
+  {
+    "problemstilling": "LGBT+ / køn / seksualitet",
+    "tilbud": "Region Syddanmarks LGBTQ+ politik",
+    "adgang": "Online information",
+    "krav": "Politik/handleplan, ikke rådgivningstilbud",
+    "kilde": "https://regionsyddanmark.dk/om-region-syddanmark/politik-og-strategier/region-syddanmarks-politik-og-handleplan-for-lgbtq-personers-moede-med-sundhedsvaesenet",
+    "note": "Gråzone; ikke borgerrettet hjælp"
+  },
+  {
+    "problemstilling": "Børn og unge",
+    "tilbud": "Fremskudt Funktion - børn og unge i mistrivsel",
+    "adgang": "Via kommune / samarbejde",
+    "krav": "Samarbejde mellem psykiatrien og kommuner; hjælper børn/unge og familier",
+    "kilde": "https://psykiatrienisyddanmark.dk/",
+    "note": "Gråzone; ikke tydelig direkte borgeradgang"
+  },
+  {
+    "problemstilling": "Børn og unge",
+    "tilbud": "STIME - børn og unges mentale sundhed",
+    "adgang": "Via deltagende kommune / samarbejde",
+    "krav": "Lettigængeligt behandlingstilbud til børn og unge i psykisk mistrivsel",
+    "kilde": "https://psykiatrienisyddanmark.dk/",
+    "note": "Gråzone; tjek lokal kommunal adgang"
+  },
+  {
+    "problemstilling": "Væresteder og fællesskaber",
+    "tilbud": "PsykInfo arrangementer",
+    "adgang": "Tilmelding via siden",
+    "krav": "Arrangementer, temadage og undervisningstilbud",
+    "kilde": "https://psykinfo.regionsyddanmark.dk/arrangementer",
+    "note": "Ikke værested, men relevant åbent fællesskabs-/videnstilbud"
+  },
+  {
+    "problemstilling": "Væresteder og fællesskaber",
+    "tilbud": "EN AF OS / PsykInfo",
+    "adgang": "Online information",
+    "krav": "Ambassadører og afstigmatisering forankret i PsykInfo",
+    "kilde": "https://www.sst.dk/en-af-os/psykinfoerne",
+    "note": "Gråzone; ikke rådgivning, men relevant oplysning/fællesskab"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Rådgivning om psykofarmaka",
+    "adgang": "Fagpersonrettet rådgivning",
+    "krav": "Psykiatriens Medicinrådgivning yder rådgivning om psykofarmaka",
+    "kilde": "https://psykiatrienisyddanmark.dk/",
+    "note": "Gråzone; virker primært fagpersonrettet, ikke almindelig borgerlinje"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Almindelige psykiatriske ambulatorier",
+    "adgang": "Via henvisning",
+    "krav": "Udredning/behandling kræver typisk henvisning",
+    "kilde": "https://psykiatrienisyddanmark.dk/",
+    "note": "Udelad fra åben ressourceside"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Psykologhjælp med tilskud",
+    "adgang": "Via lægehenvisning",
+    "krav": "Kræver henvisning fra egen læge",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/praktiserende-laeger-og-andre-behandlere/psykologer",
+    "note": "Udelad fra åben tilbudsliste eller markér som henvisningsbaseret"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Praktiserende speciallæge i psykiatri",
+    "adgang": "Via lægehenvisning",
+    "krav": "Kræver henvisning for gruppe 1-sikrede",
+    "kilde": "https://regionsyddanmark.dk/patienter-og-parorende/praktiserende-laeger-og-andre-behandlere/speciallaeger",
+    "note": "Udelad fra åben tilbudsliste"
+  }
+]

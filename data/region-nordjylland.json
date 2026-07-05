@@ -1,0 +1,258 @@
+[
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Alarmcentralen",
+    "adgang": "112",
+    "krav": "Ved akut livsfare eller fare for sig selv/andre",
+    "kilde": "https://rn.dk/Sundhed/Akut-sygdom",
+    "note": "Skal stå øverst ved akut fare"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Lægevagten Region Nordjylland",
+    "adgang": "70 150 300",
+    "krav": "Uden for egen læges åbningstid; regionen anbefaler kontakt før psykiatrisk skadestue",
+    "kilde": "https://rn.dk/Sundhed/Akut-sygdom/Skadestuer-og-akutmodtagelser",
+    "note": "Primær akut indgang uden for lægens åbningstid"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Egen læge",
+    "adgang": "Kontakt egen læge",
+    "krav": "Regionen skriver, at man før fremmøde i psykiatrisk skadestue skal kontakte egen læge eller lægevagt",
+    "kilde": "https://psykiatri.rn.dk/psykskadestue",
+    "note": "Primær akut indgang i dagtid"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Skadestue",
+    "adgang": "97 64 37 00",
+    "krav": "Døgnåben; akut psykiatrisk hjælp; dækker hele Region Nordjylland",
+    "kilde": "https://psykiatri.rn.dk/psykskadestue",
+    "note": "Kernefund, men regionen skriver, at man før fremmøde skal kontakte egen læge eller lægevagt"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Skadestue kontakt",
+    "adgang": "97 64 37 00",
+    "krav": "Døgnåben telefon til skadestuen",
+    "kilde": "https://aalborguh.rn.dk/da/Afsnit-og-ambulatorier/Psykiatrisk-Skadestue/Kontakt",
+    "note": "Adresse: Psykiatrihuset, Selma Lagerløfs Vej 349, 9260 Gistrup"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk telefonrådgivning",
+    "adgang": "98 13 42 02",
+    "krav": "Døgnåben rådgivning; også for pårørende og samarbejdspartnere",
+    "kilde": "https://aalborguh.rn.dk/da/Afsnit-og-ambulatorier/Psykiatrisk-Skadestue/Kontakt",
+    "note": "Kernefund; plejepersonale med psykiatrierfaring lytter og vejleder"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk telefonrådgivning - samlet akutside",
+    "adgang": "98 13 42 02",
+    "krav": "For mennesker med psykisk sygdom og akut behov for råd/vejledning",
+    "kilde": "https://rn.dk/Sundhed/Akut-sygdom/Skadestuer-og-akutmodtagelser",
+    "note": "Regionens generelle akutside nævner telefonrådgivningen"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Børne- og Ungdomspsykiatrisk Afdeling - akut behov",
+    "adgang": "70 150 300 / 97 64 37 00 / 98 13 42 02",
+    "krav": "Akut hjælp uden for afdelingens åbningstid via lægevagt, psykiatrisk skadestue eller psykiatrisk telefonrådgivning",
+    "kilde": "https://aalborguh.rn.dk/da/Afsnit-og-ambulatorier/Boerne-og-Ungdomspsykiatrisk-Afdeling/Afsnit/Dagafsnit-for-Boerne-og-Ungdomspsykiatri",
+    "note": "Ikke særskilt BUP-skadestue; bruger samme akutindgange"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "Information og rådgivning - Psykiatrien Region Nordjylland",
+    "adgang": "Online information",
+    "krav": "For dig eller pårørende, der har det svært i en periode, men ikke har behov for at være tilknyttet Psykiatrien",
+    "kilde": "https://psykiatri.rn.dk/Information-og-raadgivning",
+    "note": "Ikke en telefonlinje, men regionens generelle indgang til hjælp/vejledning"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "Psykiatrisk telefonrådgivning",
+    "adgang": "98 13 42 02",
+    "krav": "Døgnåben rådgivning; også for pårørende",
+    "kilde": "https://aalborguh.rn.dk/da/Afsnit-og-ambulatorier/Psykiatrisk-Skadestue/Kontakt",
+    "note": "Meget relevant som generel psykiatrisk rådgivning"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "Patientvejledningen Region Nordjylland",
+    "adgang": "Se regionens patientvejledning",
+    "krav": "Patientrettigheder, klagevejledning og hjælp i sundhedsvæsenet",
+    "kilde": "https://rn.dk/Sundhed/Patient-i-Region-Nordjylland/Patientvejledning",
+    "note": "Gråzone; ikke specifikt psykiatrisk hjælp, men relevant patientstøtte"
+  },
+  {
+    "problemstilling": "Digital hjælp",
+    "tilbud": "Internetpsykiatrien",
+    "adgang": "Online ansøgning",
+    "krav": "Gratis online behandling for let/moderat angst og depression",
+    "kilde": "https://internetpsykiatrien.dk/",
+    "note": "Ikke specifikt Region Nordjylland, men landsdækkende digital hjælp"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Enhed for Selvmordsforebyggelse",
+    "adgang": "Se side / kontakt via Psykiatrien",
+    "krav": "Til mennesker der har forsøgt selvmord eller har vedvarende tanker om selvmord; ikke i forvejen i psykiatrisk behandling",
+    "kilde": "https://psykiatri.rn.dk/Afdelinger/Voksenpsykiatri/Ambulatorier-og-sengeafsnit-for-Voksne-Moelleparkvej/Enhed-for-Selvmordsforebyggelse",
+    "note": "Kernefund; samtaler kan efter aftale også foregå i Thisted, Frederikshavn eller Hobro"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Psykiatrisk telefonrådgivning",
+    "adgang": "98 13 42 02",
+    "krav": "Døgnåben akut rådgivning ved psykisk krise",
+    "kilde": "https://aalborguh.rn.dk/da/Afsnit-og-ambulatorier/Psykiatrisk-Skadestue/Kontakt",
+    "note": "Ved akut fare: 112 eller lægevagt/skadestue"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Psykiatrisk Skadestue",
+    "adgang": "97 64 37 00",
+    "krav": "Akut psykiatrisk hjælp",
+    "kilde": "https://psykiatri.rn.dk/psykskadestue",
+    "note": "Gråzone ift. fri adgang: kontakt egen læge/lægevagt før fremmøde, medmindre man allerede er/har været i ambulant psykiatrisk behandling"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "Psykiatrisk telefonrådgivning",
+    "adgang": "98 13 42 02",
+    "krav": "Pårørende kan ringe til døgnåben telefonrådgivning",
+    "kilde": "https://aalborguh.rn.dk/da/Afsnit-og-ambulatorier/Psykiatrisk-Skadestue/Kontakt",
+    "note": "Kernefund for pårørende"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "Center for Pårørende",
+    "adgang": "97 64 37 89 / 97 64 39 30",
+    "krav": "For personer med psykisk lidelse og deres pårørende; børn, unge, voksne og familier",
+    "kilde": "https://psykiatri.rn.dk/cfp",
+    "note": "Kernefund, men kræver dokumentation for diagnose og bopæl i Region Nordjylland"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "Center for Pårørende - Team Familie",
+    "adgang": "97 64 39 30",
+    "krav": "For familier med børn mellem 5 og 17 år, der venter på udredning",
+    "kilde": "https://psykiatri.rn.dk/cfp",
+    "note": "Relevant, fordi det også nævner ventetid på udredning"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "Center for Pårørende - Team Børn",
+    "adgang": "97 64 37 89",
+    "krav": "For børn og unge op til 23 år med en forælder, der har psykisk lidelse",
+    "kilde": "https://psykiatri.rn.dk/cfp",
+    "note": "Relevant under børn/unge og pårørende"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "Center for Pårørende - Team Voksen",
+    "adgang": "Se side",
+    "krav": "For personer over 15 år med psykisk lidelse og pårørende",
+    "kilde": "https://psykiatri.rn.dk/cfp",
+    "note": "Gråzone: kræver dokumentation for diagnose"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "Center for Pårørende - Team Søskende",
+    "adgang": "Se side",
+    "krav": "For søskende og forældre til børn og unge med psykisk lidelse",
+    "kilde": "https://psykiatri.rn.dk/cfp",
+    "note": "Gråzone: kræver dokumentation for diagnose"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre",
+    "adgang": "97 66 68 70",
+    "krav": "Døgnåbent; direkte henvendelse uden aftale; gratis og frivillig hjælp",
+    "kilde": "https://aalborguh.rn.dk/afsnit-og-ambulatorier/sexologisk-center/afsnit/center-for-voldtaegtsofre",
+    "note": "Kernefund"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre - Akutmodtagelsen",
+    "adgang": "97 66 68 70",
+    "krav": "Kan kontaktes døgnet rundt; direkte fremmøde i Akutmodtagelsen",
+    "kilde": "https://aalborguh.rn.dk/Afsnit-og-ambulatorier/Sexologisk-Center/Afsnit/Center-for-Voldtaegtsofre/Akut-hjaelp-i-Akutmodtagelsen",
+    "note": "Adresse: Akuthuset, Selma Lagerløfs Vej 347, 9260 Gistrup"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre - behandling og vejledning",
+    "adgang": "97 66 68 70",
+    "krav": "For personer fra 15 år bosat i Region Nordjylland; gratis; kræver ikke henvisning; politianmeldelse ikke nødvendig",
+    "kilde": "https://aalborguh.rn.dk/Afsnit-og-ambulatorier/Sexologisk-Center/Afsnit/Center-for-Voldtaegtsofre/Behandling-og-vejledning",
+    "note": "Kernefund; også hvis overgrebet ligger måneder eller år tilbage"
+  },
+  {
+    "problemstilling": "LGBT+ / køn / seksualitet",
+    "tilbud": "Sexologisk Center",
+    "adgang": "Mail: sexologiskcenter@rn.dk",
+    "krav": "Generelle spørgsmål kan sendes på mail; behandling kræver normalt patientforløb/henvisning",
+    "kilde": "https://aalborguh.rn.dk/Afsnit-og-ambulatorier/Sexologisk-Center",
+    "note": "Gråzone; ikke egentlig åben telefonrådgivning"
+  },
+  {
+    "problemstilling": "LGBT+ / køn / seksualitet",
+    "tilbud": "Center for Seksualitet",
+    "adgang": "Se side",
+    "krav": "Udreder og behandler seksuelle problemstillinger; henvisningsbaseret behandling",
+    "kilde": "https://aalborguh.rn.dk/Afsnit-og-ambulatorier/Sexologisk-Center/Afsnit/Center-for-Seksualitet/Om-centret",
+    "note": "Udelad evt. fra åben ressourceside"
+  },
+  {
+    "problemstilling": "LGBT+ / køn / seksualitet",
+    "tilbud": "Center for Kønsidentitet",
+    "adgang": "Se side / patienttelefoner",
+    "krav": "Åben telefonlinje er kun for patienter i behandling på Center for Kønsidentitet",
+    "kilde": "https://aalborguh.rn.dk/Afsnit-og-ambulatorier/Sexologisk-Center/Afsnit/Center-for-Koensidentitet",
+    "note": "Gråzone/udelad; ikke åben for nye borgere uden forløb"
+  },
+  {
+    "problemstilling": "Væresteder og fællesskaber",
+    "tilbud": "Information og rådgivning - Psykiatrien Region Nordjylland",
+    "adgang": "Online information",
+    "krav": "Hjælp og vejledning for borgere/pårørende, der har det svært, men ikke behøver tilknytning til Psykiatrien",
+    "kilde": "https://psykiatri.rn.dk/Information-og-raadgivning",
+    "note": "Ikke et konkret værested, men kan stå som overblik"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Akutpsykiatrisk koordinator",
+    "adgang": "Ikke borgerrettet",
+    "krav": "Specialiseret rådgivning til AMK-vagtcentralen og Lægevagten",
+    "kilde": "https://aalborguh.rn.dk/For-sundhedsfaglige/Visitation-og-raadgivning/Psykiatrisk-raadgivning/Akutpsykiatrisk-koordinator",
+    "note": "Udelad fra borgerrettet ressourceside"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Almindelige psykiatriske ambulatorier",
+    "adgang": "Via henvisning",
+    "krav": "Udredning og behandling kræver henvisning og visitation",
+    "kilde": "https://psykiatri.rn.dk/Diagnose-og-behandling",
+    "note": "Udelad som udgangspunkt"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Ambulatorium for Angst og Personlighedspsykiatri",
+    "adgang": "Via henvisning",
+    "krav": "Almindeligt ambulatorium; ikke åben selvhenvendelse",
+    "kilde": "https://psykiatri.rn.dk/Afdelinger/Voksenpsykiatri/Ambulatorier-og-sengeafsnit-for-Voksne-Moelleparkvej/Ambulatorium-for-Angst-og-Personlighedspsykiatri",
+    "note": "Udelad fra åben ressourceside"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Ambulatorium for Ældrepsykiatri",
+    "adgang": "Via henvisning",
+    "krav": "Almindeligt ambulatorium; udredning/behandling",
+    "kilde": "https://psykiatri.rn.dk/Afdelinger/Aeldrepsykiatri/Ambulatorium-for-Aeldrepsykiatri",
+    "note": "Udelad fra åben ressourceside"
+  }
+]

@@ -1,0 +1,274 @@
+[
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Alarmcentralen",
+    "adgang": "112",
+    "krav": "Ved akut livsfare eller hvis man kan være til fare for sig selv eller andre",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/akut-psykiatrisk-hjalp/",
+    "note": "Skal stå øverst ved akut fare"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Egen læge",
+    "adgang": "Kontakt egen læge",
+    "krav": "Hverdage kl. 8-16 ved akut psykiatrisk hjælp",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/akut-psykiatrisk-hjalp/",
+    "note": "Region Midtjyllands primære indgang i dagtid"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Lægevagten Region Midtjylland",
+    "adgang": "70 11 31 31",
+    "krav": "Uden for egen læges åbningstid",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/akut-psykiatrisk-hjalp/",
+    "note": "Region Midtjyllands primære indgang uden for lægens åbningstid"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Rådgivningstelefon",
+    "adgang": "78 47 04 70",
+    "krav": "Døgnåben rådgivning; kan ikke yde behandling eller indlægge",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/akut-psykiatrisk-hjalp/",
+    "note": "Kernefund; åben telefonrådgivning med psykiatriske medarbejdere"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatriske akutmodtagelser i Region Midtjylland",
+    "adgang": "Via egen læge/lægevagt",
+    "krav": "Kræver som udgangspunkt aftale/henvisning før fremmøde",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/akut-psykiatrisk-hjalp/",
+    "note": "Gråzone: relevant akut hjælp, men ikke fri selvhenvendelse"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Akutmodtagelsen Gødstrup",
+    "adgang": "Via egen læge/lægevagt",
+    "krav": "Akutte psykiatriske patienter modtages i fælles akutmodtagelse efter aftale",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/akut-psykiatrisk-hjalp/",
+    "note": "Adresse: Hospitalsparken 45, 7400 Herning"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Modtagelse Horsens",
+    "adgang": "Via henvisning",
+    "krav": "Kræver henvisning fra egen læge, vagtlæge, privatpraktiserende psykiater, hospital eller psykiatrien",
+    "kilde": "https://www.psykiatrien.rm.dk/klinikker-og-sengeafsnit/regionspsykiatrien-horsens/psykiatrisk-modtagelse/",
+    "note": "Gråzone/udelad evt.; ikke direkte borgeradgang"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Akut psykiatri Aarhus / Skejby",
+    "adgang": "Via egen læge/lægevagt",
+    "krav": "Kræver henvisning fra egen læge eller lægevagt",
+    "kilde": "https://www.psykiatrien.rm.dk/klinikker-og-sengeafsnit/aarhus-universitetshospital-psykiatrien/akut-psykiatri/",
+    "note": "Gråzone/udelad evt.; ikke direkte borgeradgang"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Akutmodtagelse Randers",
+    "adgang": "Via egen læge/lægevagt",
+    "krav": "Akutte psykiatriske patienter modtages i skadestuen efter aftale",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/akut-psykiatrisk-hjalp/",
+    "note": "Adresse: Skovlyvej 9, indgang B/B3, 8930 Randers NØ"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Akutmodtagelse Viborg",
+    "adgang": "Via egen læge/lægevagt",
+    "krav": "Akut psykiatrisk hjælp via egen læge/lægevagt",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/akut-psykiatrisk-hjalp/",
+    "note": "Gråzone; brug regionens samlede akutside som kilde"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "Psykiatrisk Rådgivningstelefon",
+    "adgang": "78 47 04 70",
+    "krav": "For både patienter og pårørende; døgnåben rådgivning",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/akut-psykiatrisk-hjalp/",
+    "note": "Meget relevant til din side"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "Psykiatrisk behandling og tilbud - Region Midtjylland",
+    "adgang": "Online information",
+    "krav": "Information om psykiatriske tilbud, rettigheder, pårørende og sygdomme",
+    "kilde": "https://www.sundhed.rm.dk/sundhedstilbud/psykiatri/",
+    "note": "Ikke rådgivning, men god samlet indgang"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "PsykInfo Midt temaaftener",
+    "adgang": "Tilmelding via siden",
+    "krav": "Temaaftener om psykiatri for personer med mulig sygdom og pårørende",
+    "kilde": "https://www.sundhed.rm.dk/sundhedstilbud/psykiatri/",
+    "note": "Åbent informations-/undervisningstilbud; ikke akut hjælp"
+  },
+  {
+    "problemstilling": "Generel patientstøtte",
+    "tilbud": "Patientkontoret Region Midtjylland",
+    "adgang": "Kontaktformular / 78 41 04 44 ved hjælp til formular",
+    "krav": "Patientrettigheder, ventetider, behandlingsret og klagevejledning",
+    "kilde": "https://www.sundhed.rm.dk/rettigheder/kontakt-patientkontoret/",
+    "note": "Gråzone; ikke psykisk krisehjælp, men relevant patientstøtte"
+  },
+  {
+    "problemstilling": "Digital hjælp",
+    "tilbud": "Internetbehandling",
+    "adgang": "Online adgang via behandlingsprogram",
+    "krav": "Online psykologisk behandling ved angst, kropslig stress m.m.",
+    "kilde": "https://www.fagperson.sundhed.rm.dk/til-ansatte-og-samarbejdspartnere/telemedicin/projekter-og-indsatser/internetbehandling/",
+    "note": "Gråzone: officiel Region Midt-side, men siden er fagpersonrettet"
+  },
+  {
+    "problemstilling": "Digital hjælp",
+    "tilbud": "Internetpsykiatrien",
+    "adgang": "Online ansøgning",
+    "krav": "Gratis online behandling for let/moderat angst og depression",
+    "kilde": "https://internetpsykiatrien.dk/",
+    "note": "Ikke specifikt Region Midtjylland, men relevant landsdækkende digital hjælp"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Enhed for Selvmordsforebyggelse, Skejby",
+    "adgang": "78 47 21 50",
+    "krav": "Direkte kontakt mulig; for østlige del af Region Midtjylland",
+    "kilde": "https://www.auh.dk/afdelinger/psykiatriske-afdelinger/afdeling-for-depression-og-angst/enhed-for-selvmordsforebyggelse/",
+    "note": "Kernefund; hjælper børn, unge og voksne med selvmordstanker eller selvmordsforsøg"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Enhed for Selvmordsforebyggelse, Skejby - direkte kontakt",
+    "adgang": "78 47 21 50",
+    "krav": "Man kan tage direkte kontakt uden først at have været ved læge",
+    "kilde": "https://www.auh.dk/afdelinger/psykiatriske-afdelinger/afdeling-for-depression-og-angst/enhed-for-selvmordsforebyggelse/",
+    "note": "Vær obs: kontakt indebærer samtykke og journal/notat"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Team for Selvmordsforebyggelse, Gødstrup",
+    "adgang": "78 47 45 00",
+    "krav": "Direkte kontakt mulig; ingen henvisning kræves; vestlige del af Region Midtjylland",
+    "kilde": "https://www.regionshospitalet-goedstrup.dk/afdelinger/psykiatri/psykiatrisk-klinik-3/selvmordsforebyggelse/",
+    "note": "Kernefund; ikke akut, men gratis behandlingstilbud"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Team for Selvmordsforebyggelse, Gødstrup - pårørende/familierådgiver kan kontakte",
+    "adgang": "78 47 45 00",
+    "krav": "Pårørende eller familierådgiver kan kontakte teamet på vegne af personen",
+    "kilde": "https://www.regionshospitalet-goedstrup.dk/afdelinger/psykiatri/psykiatrisk-klinik-3/selvmordsforebyggelse/",
+    "note": "Relevant både under selvskade/selvmordstanker og pårørende"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "Psykiatrisk Rådgivningstelefon",
+    "adgang": "78 47 04 70",
+    "krav": "Døgnåben rådgivning for patienter og pårørende",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/akut-psykiatrisk-hjalp/",
+    "note": "Kernefund til pårørende"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "Tilbud til pårørende - Region Midtjylland",
+    "adgang": "Online information",
+    "krav": "Information, råd, foreninger, temaaftener og undervisning til pårørende",
+    "kilde": "https://www.sundhed.rm.dk/sundhedstilbud/psykiatri/tilbud-til-parorende/",
+    "note": "Samlet pårørendeside"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "Foreninger og netværk A-Å",
+    "adgang": "Online oversigt",
+    "krav": "Region Midtjyllands oversigt over foreninger og netværk",
+    "kilde": "https://www.sundhed.rm.dk/sundhedstilbud/psykiatri/tilbud-til-parorende/foreninger-og-netvark-a-a/",
+    "note": "Gråzone; mange tilbud er eksterne, men regionen linker til dem"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "PsykInfo Talk",
+    "adgang": "Online videoer",
+    "krav": "Videoer om psykisk sygdom med patienter, pårørende og medarbejdere",
+    "kilde": "https://www.sundhed.rm.dk/sundhedstilbud/psykiatri/tilbud-til-parorende/",
+    "note": "Ikke rådgivning, men relevant støtte/information"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre, Aarhus Universitetshospital",
+    "adgang": "78 46 35 43",
+    "krav": "Gratis hjælp; ingen henvisning; anmeldelse til politiet er ikke nødvendig",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/center-for-voldtaegtsofre/",
+    "note": "Kernefund; akut inden for 1 uge, åbent hele døgnet"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre, Regionshospitalet Gødstrup",
+    "adgang": "91 16 30 90 / 78 43 59 00",
+    "krav": "Gratis hjælp; ingen henvisning; anmeldelse til politiet er ikke nødvendig",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/center-for-voldtaegtsofre/",
+    "note": "Kernefund; brug hovednummer hvis akutnummer ikke svarer"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre - hjælp efter overgreb",
+    "adgang": "Se Aarhus/Gødstrup-numre",
+    "krav": "Hjælp efter voldtægt, forsøg på voldtægt eller andre seksuelle overgreb",
+    "kilde": "https://www.sundhed.rm.dk/akuthjalp/center-for-voldtaegtsofre/",
+    "note": "Regionen skriver, at de hjælper både akut og hvis overgrebet ligger længere tid tilbage"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "CSM - Center for Seksuelt Misbrugte",
+    "adgang": "20 22 45 80 / 51 19 99 50",
+    "krav": "For personer berørt af seksuelle overgreb og pårørende",
+    "kilde": "https://www.sundhed.rm.dk/sundhedstilbud/psykiatri/tilbud-til-parorende/foreninger-og-netvark-a-a/",
+    "note": "Ekstern organisation, men Region Midtjylland henviser til den"
+  },
+  {
+    "problemstilling": "LGBT+ / køn / seksualitet",
+    "tilbud": "Sexologisk Klinik / sexologisk behandling",
+    "adgang": "Kræver typisk henvisning",
+    "krav": "Ikke fundet som åben Region Midtjylland-telefonlinje uden henvisning",
+    "kilde": "",
+    "note": "Medtag ikke som åbent tilbud uden konkret kilde"
+  },
+  {
+    "problemstilling": "Væresteder og fællesskaber",
+    "tilbud": "EN AF OS Region Midtjylland",
+    "adgang": "Online information",
+    "krav": "Ambassadører med erfaring med psykisk sygdom",
+    "kilde": "https://www.sundhed.rm.dk/sundhedstilbud/psykiatri/",
+    "note": "Gråzone; ikke rådgivning, men relevant fællesskab/oplysning"
+  },
+  {
+    "problemstilling": "Væresteder og fællesskaber",
+    "tilbud": "Foreninger og netværk A-Å",
+    "adgang": "Online oversigt",
+    "krav": "Oversigt over eksterne foreninger, netværk og støtte",
+    "kilde": "https://www.sundhed.rm.dk/sundhedstilbud/psykiatri/tilbud-til-parorende/foreninger-og-netvark-a-a/",
+    "note": "Gråzone; ikke regionens egne tilbud, men brugbar ressource"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Specialisttelefonnumre og rådgivningshotline for fagpersoner",
+    "adgang": "Fagpersontelefoner",
+    "krav": "Kun til læger og andre fagpersoner",
+    "kilde": "https://www.fagperson.sundhed.rm.dk/til-ansatte-og-samarbejdspartnere/psykiatri/henvisning-og-visitation/specialisttelefonnumre/",
+    "note": "Udelad fra borgerrettet ressourceside"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Psykiatrisk Modtagelse Horsens",
+    "adgang": "Via henvisning",
+    "krav": "Kræver henvisning",
+    "kilde": "https://www.psykiatrien.rm.dk/klinikker-og-sengeafsnit/regionspsykiatrien-horsens/psykiatrisk-modtagelse/",
+    "note": "Ikke direkte borgeradgang"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Akut Psykiatri Aarhus / Skejby",
+    "adgang": "Via henvisning",
+    "krav": "Kræver henvisning fra egen læge eller lægevagt",
+    "kilde": "https://www.psykiatrien.rm.dk/klinikker-og-sengeafsnit/aarhus-universitetshospital-psykiatrien/akut-psykiatri/",
+    "note": "Ikke direkte borgeradgang"
+  }
+]

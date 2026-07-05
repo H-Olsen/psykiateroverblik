@@ -1,0 +1,306 @@
+[
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Akuttelefonen 1818 - psykiatrisk akutmodtagelse",
+    "adgang": "1818, tast 3 for psykisk sygdom",
+    "krav": "Ingen henvisning; akut psykisk sygdom eller pårørende til én med akut behov",
+    "kilde": "https://www.regionsjaelland.dk/sundhed/akuthjaelp/psykiatriske-akutmodtagelser",
+    "note": "Samlet akut indgang for Region Sjælland"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Alarmcentralen",
+    "adgang": "112",
+    "krav": "Ved livsfare",
+    "kilde": "https://www.regionsjaelland.dk/sundhed/akuthjaelp/psykiatriske-akutmodtagelser",
+    "note": "Står øverst ved akut fare"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Akutmodtagelse Roskilde",
+    "adgang": "1818, tast 3 og vælg Roskilde",
+    "krav": "Ingen forudgående henvisning; borgere kan henvende sig telefonisk eller ved fremmøde",
+    "kilde": "https://www.mvhospital.dk/afdelinger/psykiatrien-oest/psykiatrisk-akutmodtagelse-roskilde",
+    "note": "Modtager også børn og unge i akut krise; alle borgere modtages ved henvendelse"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Akutmodtagelse Slagelse",
+    "adgang": "1818, tast 3 og vælg Slagelse",
+    "krav": "Ingen forudgående henvisning; borgere kan henvende sig telefonisk eller ved fremmøde",
+    "kilde": "https://www.mvhospital.dk/afdelinger/psykiatrien-vest/psykiatrisk-akutmodtagelse-slagelse",
+    "note": "Døgnåben; primært nordvestlige kommuner, men alle borgere modtages ved henvendelse"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Psykiatrisk Akutmodtagelse Vordingborg",
+    "adgang": "1818, tast 3 og vælg Vordingborg",
+    "krav": "Ingen forudgående henvisning; borgere kan henvende sig telefonisk eller ved fremmøde",
+    "kilde": "https://www.mvhospital.dk/afdelinger/psykiatrien-syd/psykiatrisk-akutmodtagelse-vordingborg",
+    "note": "Døgnåben; primært Lolland, Guldborgsund, Vordingborg og Næstved, men alle borgere modtages ved henvendelse"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Børne- og Ungdomspsykiatrisk akut hjælp",
+    "adgang": "1818, tast 3 og derefter tast 1 for børn og unge under 18",
+    "krav": "Akut psykisk hjælp til børn og unge",
+    "kilde": "https://www.regionsjaelland.dk/sundhed/akuthjaelp/psykiatriske-akutmodtagelser",
+    "note": "Regionens 1818-menu har særskilt valg for børn og unge"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Børne- og Ungdomspsykiatrisk skadestue Roskilde",
+    "adgang": "58 53 75 00",
+    "krav": "Direkte henvendelse ved akut behov for børn og unge",
+    "kilde": "https://www.mvhospital.dk/afdelinger/afdeling-for-boerne-og-ungdomspsykiatri/bakkehuset/klinik-for-selvmordsforebyggelse-for-boern-og-unge",
+    "note": "Region Sjælland skriver, at børn/unge kan henvende sig direkte hertil ved akut hjælp"
+  },
+  {
+    "problemstilling": "Akut krise",
+    "tilbud": "Ambulante akutteams ved psykiatriske akutmodtagelser",
+    "adgang": "Via psykiatrisk akutmodtagelse / 1818",
+    "krav": "Gråzone; knyttet til akutmodtagelserne, ikke tydelig selvstændig borgerindgang",
+    "kilde": "https://www.mvhospital.dk/afdelinger/psykiatrien-oest/psykiatrisk-akutmodtagelse-roskilde/henvendelse-til-psykiatrisk-akutmodtagelse",
+    "note": "Tjek adgangskrav / optageområde; Region Sjælland beskriver akutteam som opfølgning efter akutmodtagelse"
+  },
+  {
+    "problemstilling": "Generel Patientstøtte",
+    "tilbud": "PsykInfo - Kompetencecenter for Recovery",
+    "adgang": "70 25 02 60",
+    "krav": "Anonym rådgivning; alle kan ringe",
+    "kilde": "https://www.mvhospital.dk/raadgivning/psykinfo",
+    "note": "Meget relevant kernefund"
+  },
+  {
+    "problemstilling": "Generel Patientstøtte",
+    "tilbud": "PsykInfos rådgivning",
+    "adgang": "70 25 02 60",
+    "krav": "Anonym telefonrådgivning; patienter, pårørende, venner, fagfolk, studerende m.fl.",
+    "kilde": "https://www.mvhospital.dk/raadgivning/psykinfo/raadgivning",
+    "note": "Telefontid: mandag-onsdag 9-15, torsdag 14-18, fredag 9-15"
+  },
+  {
+    "problemstilling": "Generel Patientstøtte",
+    "tilbud": "PsykInfo personlig rådgivning Næstved",
+    "adgang": "Fremmøde uden tidsbestilling",
+    "krav": "Ingen henvisning; kom ind fra gaden i åbningstiden",
+    "kilde": "https://www.mvhospital.dk/raadgivning/psykinfo/raadgivning",
+    "note": "Farimagsvej 40, 4700 Næstved; mandag og onsdag 9-15"
+  },
+  {
+    "problemstilling": "Generel Patientstøtte",
+    "tilbud": "PsykInfo personlig rådgivning Roskilde",
+    "adgang": "Fremmøde uden tidsbestilling",
+    "krav": "Ingen henvisning; kom ind fra gaden i åbningstiden",
+    "kilde": "https://www.mvhospital.dk/raadgivning/psykinfo/raadgivning",
+    "note": "Københavnsvej 26 F, 1.; tirsdag 9-15 og torsdag 14-18"
+  },
+  {
+    "problemstilling": "Generel Patientstøtte",
+    "tilbud": "PsykInfo arrangementer og online talks",
+    "adgang": "Tilmelding via siden",
+    "krav": "Åbent for alle; gratis, fysisk fremmøde kræver ofte tilmelding",
+    "kilde": "https://www.mvhospital.dk/raadgivning/psykinfo/arrangementer-og-livetalks",
+    "note": "Åbne arrangementer om psykisk lidelse, behandling og recovery"
+  },
+  {
+    "problemstilling": "Generel Patientstøtte",
+    "tilbud": "Patientvejledningen Region Sjælland",
+    "adgang": "70 15 50 01",
+    "krav": "Patientrettigheder og uvildig vejledning",
+    "kilde": "https://www.regionsjaelland.dk/sundhed/patientrettigheder-og-vejledning",
+    "note": "Gråzone; ikke specifikt psykisk hjælp, men relevant patientstøtte"
+  },
+  {
+    "problemstilling": "Digital hjælp",
+    "tilbud": "Internetbaseret behandling af angst eller depression",
+    "adgang": "Ansøgning via internetpsykiatrien.dk",
+    "krav": "Gratis online behandling; ansøgningsskema vurderes af psykologer",
+    "kilde": "https://www.mvhospital.dk/raadgivning/internetbaseret-behandling-af-angst-eller-depression",
+    "note": "Kernefund; landsdækkende digital behandling, uafhængigt af bopæl"
+  },
+  {
+    "problemstilling": "Digital hjælp",
+    "tilbud": "Internetpsykiatrien",
+    "adgang": "Online ansøgning",
+    "krav": "Gratis online behandling for let/moderat angst og depression",
+    "kilde": "https://internetpsykiatrien.dk/",
+    "note": "Ikke kun Region Sjælland, men Region Sjælland henviser selv til tilbuddet"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Selvmordsforebyggelse - Region Sjælland",
+    "adgang": "Se side",
+    "krav": "Samlet informationsside om hjælp ved selvmordstanker",
+    "kilde": "https://www.regionsjaelland.dk/sundhed/akuthjaelp/selvmordsforebyggelse",
+    "note": "Indeholder bl.a. Klinik for Selvmordsforebyggelse, 1818 og Livslinien"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Klinik for Selvmordsforebyggelse - Greve",
+    "adgang": "58 53 73 73",
+    "krav": "Borgere over 18 år med selvmordstanker eller selvmordsforsøg; ikke hvis man allerede er i psykiatrisk behandling",
+    "kilde": "https://www.mvhospital.dk/afdelinger/psykiatrien-oest/klinik-for-selvmordsforebyggelse-greve",
+    "note": "Kernefund; modtager borgere fra hele Region Sjælland"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Klinik for Selvmordsforebyggelse - selvhenvendelse",
+    "adgang": "58 53 73 73",
+    "krav": "Selvkontakt mulig; målgruppe vurderes efter kontakt",
+    "kilde": "https://www.mvhospital.dk/afdelinger/psykiatrien-oest/klinik-for-selvmordsforebyggelse-greve/hvis-du-tilknyttes-klinik-for-selvmordsforebyggelse",
+    "note": "Gråzone/kernefund: siden nævner både henvisning og mulighed for selv at kontakte klinikken"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Klinik for Selvmordsforebyggelse for børn og unge",
+    "adgang": "24 64 46 17",
+    "krav": "Råd og vejledning til børn/unge under 18 med selvmordstanker og/eller selvmordsforsøg",
+    "kilde": "https://www.mvhospital.dk/afdelinger/afdeling-for-boerne-og-ungdomspsykiatri/bakkehuset/klinik-for-selvmordsforebyggelse-for-boern-og-unge",
+    "note": "Åben mandag, tirsdag og torsdag kl. 8.30-12"
+  },
+  {
+    "problemstilling": "Selvskade / selvmordstanker",
+    "tilbud": "Bakkehuset / STIME",
+    "adgang": "58 53 81 50",
+    "krav": "Gråzone; står på siden for børn/unge, men ikke tydeligt som generel åben rådgivning",
+    "kilde": "https://www.mvhospital.dk/afdelinger/afdeling-for-boerne-og-ungdomspsykiatri/bakkehuset/klinik-for-selvmordsforebyggelse-for-boern-og-unge",
+    "note": "Tjek adgangskrav / optageområde"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "PsykInfo rådgivning for pårørende",
+    "adgang": "70 25 02 60",
+    "krav": "Pårørende kan få anonym rådgivning",
+    "kilde": "https://www.mvhospital.dk/raadgivning/psykinfo/raadgivning",
+    "note": "Alle kan ringe; også venner og fagpersoner"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "PsykInfo arrangementer for pårørende",
+    "adgang": "Tilmelding via siden",
+    "krav": "Åbne gratis arrangementer; ofte tilmelding",
+    "kilde": "https://www.mvhospital.dk/raadgivning/psykinfo/arrangementer-og-livetalks",
+    "note": "Der er løbende temaer om pårørende"
+  },
+  {
+    "problemstilling": "Pårørende til psykisk syge",
+    "tilbud": "Klinik for Selvmordsforebyggelse - hjælp til pårørende",
+    "adgang": "58 53 73 73",
+    "krav": "Pårørende til mennesker, der har begået selvmord, forsøgt selvmord eller har selvmordstanker",
+    "kilde": "https://www.mvhospital.dk/afdelinger/psykiatrien-oest/klinik-for-selvmordsforebyggelse-greve",
+    "note": "Relevant under pårørende og selvmord"
+  },
+  {
+    "problemstilling": "Sorg",
+    "tilbud": "Det Nationale Sorgcenter i Næstved",
+    "adgang": "Ansøg via sorgcenter.dk/fa-hjaelp",
+    "krav": "Gratis specialiseret sorgstøtte i samarbejde med Region Sjælland; ingen henvisning nødvendig for voksne ifølge regionsnyhed",
+    "kilde": "https://www.regionsjaelland.dk/nyheder/2026/nu-kan-sorgramte-i-region-sjaelland-faa-gratis-hjaelp",
+    "note": "Gråzone: drift hos ekstern organisation, men officielt regionstøttet og fysisk på hospitalet"
+  },
+  {
+    "problemstilling": "Sorg",
+    "tilbud": "Sorglinjen",
+    "adgang": "Telefon/chat via Sorgcenterets egen side",
+    "krav": "Støtte når sorgen føles stor",
+    "kilde": "https://www.regionsjaelland.dk/nyheder/2026/nu-kan-sorgramte-i-region-sjaelland-faa-gratis-hjaelp",
+    "note": "Region Sjælland nævner tilbuddet i nyhed om Sorgcenteret; ekstern udfører"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre",
+    "adgang": "58 55 30 60",
+    "krav": "Ingen henvisning; seksuelt overgreb kort eller længere tid tilbage",
+    "kilde": "https://www.regionsjaelland.dk/sundhed/akuthjaelp/center-for-voldtaegtsofre",
+    "note": "Kernefund; døgnåbent"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre Holbæk",
+    "adgang": "58 55 30 60",
+    "krav": "Ingen henvisning; voksne behandles i Holbæk eller Nykøbing Falster",
+    "kilde": "https://www.regionsjaelland.dk/sundhed/akuthjaelp/center-for-voldtaegtsofre",
+    "note": "Regionens fælles nummer stiller videre til valgt center"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Voldtægtsofre Nykøbing Falster",
+    "adgang": "58 55 30 60",
+    "krav": "Ingen henvisning; voksne behandles i Holbæk eller Nykøbing Falster",
+    "kilde": "https://www.regionsjaelland.dk/sundhed/akuthjaelp/center-for-voldtaegtsofre",
+    "note": "Regionens fælles nummer stiller videre til valgt center"
+  },
+  {
+    "problemstilling": "Vold / overgreb",
+    "tilbud": "Center for Seksuelt Misbrugte, Øst",
+    "adgang": "Kontakt via CSM Øst",
+    "krav": "For seksuelle overgreb i barndom/ungdom; anonym kontakt mulig",
+    "kilde": "https://www.regionsjaelland.dk/sundhed/akuthjaelp/center-for-voldtaegtsofre",
+    "note": "Ekstern organisation, men Region Sjælland henviser direkte til den"
+  },
+  {
+    "problemstilling": "LGBT+ / køn / seksualitet",
+    "tilbud": "Sexologisk Regionsklinik Roskilde",
+    "adgang": "Henvisning kræves",
+    "krav": "Kræver henvisning; ikke åben selvhenvendelse",
+    "kilde": "https://www.mvhospital.dk/afdelinger/psykiatrien-oest/sexologisk-regionsklinik-roskilde",
+    "note": "Udelad fra åben ressourceside eller marker som henvisningsbaseret"
+  },
+  {
+    "problemstilling": "LGBT+ / køn / seksualitet",
+    "tilbud": "Klinik for seksuelt overførte sygdomme Roskilde",
+    "adgang": "Se side",
+    "krav": "Åben for alle, der ønsker undersøgelse og rådgivning om seksuelt overførte sygdomme",
+    "kilde": "https://www.regionsjaelland.dk/sundhed/indsatser/seksuel-sundhed/bestil-klamydia-hjemmetest",
+    "note": "Gråzone: seksuel sundhed, ikke psykiatrisk hjælp"
+  },
+  {
+    "problemstilling": "Væresteder og fællesskaber",
+    "tilbud": "Recovery Højskole",
+    "adgang": "Kontakt kommunen / PsykInfo",
+    "krav": "For borgere over 18 i Region Sjælland med psykiske vanskeligheder; kommunen bevilger ophold",
+    "kilde": "https://www.mvhospital.dk/raadgivning/psykinfo/recovery-hoejskole",
+    "note": "Gråzone: ikke behandling og ikke direkte selvvisitation"
+  },
+  {
+    "problemstilling": "Væresteder og fællesskaber",
+    "tilbud": "PsykInfo - Mennesker har brug for Mennesker",
+    "adgang": "Se side",
+    "krav": "Havefællesskaber og håb/recovery",
+    "kilde": "https://www.mvhospital.dk/patient-og-paaroerende/recovery/mennesker-har-brug-for-mennesker",
+    "note": "Gråzone; relevant fællesskab/recovery, men tjek konkret adgang"
+  },
+  {
+    "problemstilling": "Væresteder og fællesskaber",
+    "tilbud": "PsykInfo - Aktiviteter i foreninger",
+    "adgang": "Via PsykInfo-side",
+    "krav": "Links/overblik til frivillige foreninger",
+    "kilde": "https://www.mvhospital.dk/raadgivning/psykinfo/arrangementer-og-livetalks",
+    "note": "Gråzone; ikke regionens eget behandlingstilbud"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Psykiatrisk Visitationsklinik",
+    "adgang": "58 53 61 00",
+    "krav": "Primært visitation/henvisning; ikke et åbent støttetilbud",
+    "kilde": "https://www.mvhospital.dk/om-hospitalet/psykiatrisk-visitationsklinik/for-patienter/ved-tilbagevisning",
+    "note": "Medtag kun på system-/henvisningsside"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "Shared Care Funktion",
+    "adgang": "29 10 88 85",
+    "krav": "Gråzone; ser primært fagligt/visitationelt ud",
+    "kilde": "https://www.mvhospital.dk/om-hospitalet/psykiatrisk-visitationsklinik/for-patienter/ved-tilbagevisning",
+    "note": "Tjek adgangskrav"
+  },
+  {
+    "problemstilling": "Andet / gråzone",
+    "tilbud": "TOP - Tidlig Opsporing af Psykose",
+    "adgang": "Se side",
+    "krav": "Gråzone; kan opspore borgere over 15 år, men behandling/OPUS kræver videre visitation",
+    "kilde": "https://www.mvhospital.dk/afdelinger/psykiatrien-oest/kompetencecenter-for-debuterende-psykose",
+    "note": "Ikke rent åbent rådgivningstilbud; kræver nærmere tjek"
+  }
+]

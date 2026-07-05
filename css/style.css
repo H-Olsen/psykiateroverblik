@@ -636,6 +636,62 @@ select {
   font-weight: 800;
 }
 
+.sortable-table-intro {
+  margin-bottom: 18px;
+  color: var(--muted);
+}
+
+.sortable-table-intro p {
+  margin: 0;
+}
+
+.region-resource-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(220px, 0.7fr);
+  gap: 16px;
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.region-resource-section {
+  margin-top: 28px;
+}
+
+#hvor-bor-du,
+#regioner,
+#problemstillinger,
+#regionernes-tilbud,
+#kommunernes-tilbud,
+#andre-tilbudsydere {
+  margin-bottom: 34px;
+  scroll-margin-top: 96px;
+}
+
+.resource-standalone-card {
+  margin-top: 18px;
+}
+
+.anchor-target {
+  display: block;
+  scroll-margin-top: 96px;
+}
+
+.region-crisis-box {
+  margin-bottom: 18px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  margin: 2px 0 24px;
+  color: var(--blue-dark);
+  font-weight: 800;
+}
+
 .table-wrap {
   overflow-x: auto;
   border: 1px solid var(--line);
@@ -670,8 +726,58 @@ select {
   letter-spacing: 0;
 }
 
+.sortable-table {
+  min-width: 1580px;
+}
+
+.resource-table {
+  min-width: 1180px;
+}
+
+.sortable-table th {
+  padding: 0;
+}
+
+.sortable-table th button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  min-height: 48px;
+  padding: 13px 14px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  text-transform: inherit;
+  cursor: pointer;
+}
+
+.sortable-table th button:hover,
+.sortable-table th button:focus-visible {
+  background: #dff0ec;
+  outline: none;
+}
+
+.sort-indicator {
+  display: inline-flex;
+  width: 1ch;
+  color: var(--green-dark);
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
 .clinic-table tbody tr:hover {
   background: #f5fbfa;
+}
+
+.resource-table .resource-row-urgent {
+  background: var(--danger-soft);
+}
+
+.resource-table .resource-row-urgent:hover {
+  background: #f9e2e7;
 }
 
 .clinic-table td:first-child {
@@ -838,6 +944,10 @@ select {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .region-resource-controls {
+    grid-template-columns: 1fr;
+  }
+
   .field-wide {
     grid-column: 1 / -1;
   }
@@ -899,6 +1009,11 @@ select {
 
   .table-wrap {
     display: none;
+  }
+
+  .sortable-table-wrap,
+  .resource-table-wrap {
+    display: block;
   }
 
   .clinic-cards {
