@@ -62,7 +62,7 @@
     });
 
     nav.addEventListener("click", function (event) {
-      if (event.target.tagName === "A") {
+      if (event.target.closest && event.target.closest("a")) {
         nav.classList.remove("is-open");
         button.setAttribute("aria-expanded", "false");
       }
@@ -72,6 +72,7 @@
   }
 
   function markCurrentNavigation(nav) {
+    var normalizedPath = normalizeCurrentPath(window.location.pathname);
     var currentPath = window.location.pathname.split("/").pop() || "index.html";
     var parentPathMap = {
       "offentlige-klinikker.html": "voksen.html",
@@ -87,21 +88,83 @@
       "privatlivspolitik.html": "om-os.html"
     };
     var activePath = parentPathMap[currentPath] || currentPath;
+    var activeSection = getActiveSection(normalizedPath, activePath);
 
     if (
       new URLSearchParams(window.location.search).get("boernUnge") === "ja" &&
       (currentPath === "klinikker.html" || currentPath === "offentlige-klinikker.html")
     ) {
       activePath = "boern-unge-psykiatere.html";
+      activeSection = "boern";
     }
 
     Array.prototype.forEach.call(nav.querySelectorAll("a[href]"), function (link) {
-      if (link.getAttribute("href") === activePath) {
+      var linkSection = link.getAttribute("data-nav");
+      var linkHref = link.getAttribute("href");
+
+      if ((linkSection && linkSection === activeSection) || linkHref === activePath) {
         link.setAttribute("aria-current", "page");
       } else {
         link.removeAttribute("aria-current");
       }
     });
+  }
+
+  function normalizeCurrentPath(pathname) {
+    var path = pathname.replace(/\/+$/, "");
+
+    if (!path) {
+      return "/";
+    }
+
+    path = path.replace(/^\/psykiateroverblik(?=\/|$)/, "");
+    return path || "/";
+  }
+
+  function getActiveSection(path, fallbackPath) {
+    if (path === "/") {
+      return "forside";
+    }
+
+    if (path.indexOf("/find-psykiater") === 0 || path.indexOf("/voksen") === 0) {
+      return "find";
+    }
+
+    if (path.indexOf("/boern-og-unge") === 0) {
+      return "find";
+    }
+
+    if (path.indexOf("/ressourcer") === 0) {
+      return "ressourcer";
+    }
+
+    if (path.indexOf("/information") === 0) {
+      return "information";
+    }
+
+    if (path.indexOf("/om") === 0) {
+      return "om";
+    }
+
+    if (path.indexOf("/brug-for-hjaelp-nu") === 0) {
+      return "krise";
+    }
+
+    var fallbackMap = {
+      "index.html": "forside",
+      "voksen.html": "find",
+      "klinikker.html": "find",
+      "offentlige-klinikker.html": "find",
+      "boern-unge-psykiatere.html": "boern",
+      "problemstillinger.html": "ressourcer",
+      "information.html": "information",
+      "om-os.html": "om",
+      "kontakt.html": "om",
+      "privatlivspolitik.html": "om",
+      "krisehjaelp.html": "krise"
+    };
+
+    return fallbackMap[fallbackPath] || "";
   }
 
   function initClinicOverview() {
