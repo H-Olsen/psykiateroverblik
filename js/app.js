@@ -74,29 +74,9 @@
   function markCurrentNavigation(nav) {
     var normalizedPath = normalizeCurrentPath(window.location.pathname);
     var currentPath = window.location.pathname.split("/").pop() || "index.html";
-    var parentPathMap = {
-      "offentlige-klinikker.html": "voksen.html",
-      "offentlige-psykiatere-info.html": "voksen.html",
-      "klinikker.html": "voksen.html",
-      "private-psykiatere-info.html": "voksen.html",
-      "ressourcer-region-hovedstaden.html": "problemstillinger.html",
-      "ressourcer-region-sjaelland.html": "problemstillinger.html",
-      "ressourcer-region-syddanmark.html": "problemstillinger.html",
-      "ressourcer-region-midtjylland.html": "problemstillinger.html",
-      "ressourcer-region-nordjylland.html": "problemstillinger.html",
-      "kontakt.html": "om-os.html",
-      "privatlivspolitik.html": "om-os.html"
-    };
+    var parentPathMap = {};
     var activePath = parentPathMap[currentPath] || currentPath;
     var activeSection = getActiveSection(normalizedPath, activePath);
-
-    if (
-      new URLSearchParams(window.location.search).get("boernUnge") === "ja" &&
-      (currentPath === "klinikker.html" || currentPath === "offentlige-klinikker.html")
-    ) {
-      activePath = "boern-unge-psykiatere.html";
-      activeSection = "boern";
-    }
 
     Array.prototype.forEach.call(nav.querySelectorAll("a[href]"), function (link) {
       var linkSection = link.getAttribute("data-nav");
@@ -126,16 +106,20 @@
       return "forside";
     }
 
-    if (path.indexOf("/find-psykiater") === 0 || path.indexOf("/voksen") === 0) {
+    if (path.indexOf("/find-psykiater") === 0) {
       return "find";
     }
 
-    if (path.indexOf("/boern-og-unge") === 0) {
-      return "find";
+    if (path.indexOf("/nyttige-links-og-tilbud/akut-krise") === 0) {
+      return "akut";
     }
 
-    if (path.indexOf("/ressourcer") === 0) {
-      return "ressourcer";
+    if (path.indexOf("/nyttige-links-og-tilbud/brug-for-et-menneske-at-tale-med-hurtigst-muligt") === 0) {
+      return "menneske";
+    }
+
+    if (path.indexOf("/nyttige-links-og-tilbud") === 0) {
+      return "nyttige";
     }
 
     if (path.indexOf("/information") === 0) {
@@ -146,22 +130,12 @@
       return "om";
     }
 
-    if (path.indexOf("/brug-for-hjaelp-nu") === 0) {
-      return "krise";
-    }
-
     var fallbackMap = {
       "index.html": "forside",
-      "voksen.html": "find",
-      "klinikker.html": "find",
-      "offentlige-klinikker.html": "find",
-      "boern-unge-psykiatere.html": "boern",
-      "problemstillinger.html": "ressourcer",
-      "information.html": "information",
-      "om-os.html": "om",
-      "kontakt.html": "om",
-      "privatlivspolitik.html": "om",
-      "krisehjaelp.html": "krise"
+      "find-psykiater": "find",
+      "nyttige-links-og-tilbud": "nyttige",
+      "information": "information",
+      "om": "om"
     };
 
     return fallbackMap[fallbackPath] || "";
@@ -524,6 +498,11 @@
     }
 
     var phone = String(value).trim();
+
+    if (!/^\+?[\d\s().-]{6,}$/.test(phone)) {
+      return document.createTextNode(phone);
+    }
+
     var link = document.createElement("a");
     link.href = "tel:" + phone.replace(/[^\d+]/g, "");
     link.textContent = phone;

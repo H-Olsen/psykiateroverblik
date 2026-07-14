@@ -2,60 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://h-olsen.github.io/psykiateroverblik/</loc></url>
   <url><loc>https://h-olsen.github.io/psykiateroverblik/find-psykiater/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/voksen/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/voksen/offentlige-psykiatere/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/voksen/private-psykiatere/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/boern-og-unge/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/boern-og-unge/nyttig-info-til-foraeldre/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/boern-og-unge/offentlige-boerne-og-ungdomspsykiatere/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/boern-og-unge/private-boerne-og-ungdomspsykiatere/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/regioner/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/regioner/region-hovedstaden/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/regioner/region-sjaelland/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/regioner/region-syddanmark/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/regioner/region-midtjylland/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/regioner/region-nordjylland/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/kommuner/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/kommuner/koebenhavn/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/kommuner/frederiksberg/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/kommuner/aarhus/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/kommuner/odense/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/kommuner/aalborg/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/kommuner/anden-kommune/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/andre-tilbudsydere/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/akut-krise/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/generelt-menneskeligt-sjaeleligt/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/ensomhed/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/vaeresteder-og-faellesskaber/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/boern-og-unge/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/studerende/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/foraeldre-familie/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/arbejdsliv/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/aeldre/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/lgbt-koen-seksualitet/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/paaroerende-til-psykisk-syge/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/vold-chikane-stalking-psykisk-vold/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/maends-mentale-sundhed/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/misbrug/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/selvskade/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/patientstoette-og-rettigheder/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/ressourcer/problemstillinger/foreninger-for-psykiske-sygdomme/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/find-psykiater/voksenpsykiater/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/find-psykiater/voksenpsykiater/offentlige-psykiatere/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/find-psykiater/voksenpsykiater/private-psykiatere/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/find-psykiater/boerne-og-ungdomspsykiater/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/find-psykiater/boerne-og-ungdomspsykiater/er-du-foraelder/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/find-psykiater/boerne-og-ungdomspsykiater/offentlige-boerne-og-ungdomspsykiatere/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/find-psykiater/boerne-og-ungdomspsykiater/private-boerne-og-ungdomspsykiatere/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/akut-krise/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/brug-for-et-menneske-at-tale-med-hurtigst-muligt/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/gode-overblik/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/foreninger-for-psykiske-sygdomme/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/akut-krise/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/generelt-menneskeligt-sjaeleligt/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/ensomhed/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/vaeresteder-og-faellesskaber/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/boern-unge-og-familie/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/studerende/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/aeldre/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/paaroerende-til-psykisk-syge/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/maends-mentale-sundhed/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/i-sorg/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/patientstoette-og-rettigheder/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/region-hovedstaden/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/region-sjaelland/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/region-syddanmark/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/region-midtjylland/</loc></url>
+  <url><loc>https://h-olsen.github.io/psykiateroverblik/nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/region-nordjylland/</loc></url>
   <url><loc>https://h-olsen.github.io/psykiateroverblik/information/</loc></url>
   <url><loc>https://h-olsen.github.io/psykiateroverblik/information/offentlig-psykiater-ydernummer/</loc></url>
   <url><loc>https://h-olsen.github.io/psykiateroverblik/information/behandlingsgaranti/</loc></url>
   <url><loc>https://h-olsen.github.io/psykiateroverblik/information/egen-laege-vs-praktiserende-psykiater/</loc></url>
   <url><loc>https://h-olsen.github.io/psykiateroverblik/information/patientrettigheder/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/information/de-store-hjaelpere/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/information/psykiatrifonden/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/information/livslinien/</loc></url>
   <url><loc>https://h-olsen.github.io/psykiateroverblik/om/</loc></url>
   <url><loc>https://h-olsen.github.io/psykiateroverblik/om/motivation/</loc></url>
   <url><loc>https://h-olsen.github.io/psykiateroverblik/om/disclaimer/</loc></url>
   <url><loc>https://h-olsen.github.io/psykiateroverblik/om/kontakt/</loc></url>
   <url><loc>https://h-olsen.github.io/psykiateroverblik/om/privatlivspolitik/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/om/stoet-siden/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/brug-for-hjaelp-nu/</loc></url>
-  <url><loc>https://h-olsen.github.io/psykiateroverblik/</loc></url>
 </urlset>

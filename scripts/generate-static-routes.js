@@ -5,24 +5,40 @@ const root = path.resolve(__dirname, "..");
 const siteUrl = "https://h-olsen.github.io/psykiateroverblik";
 const supportUrl = "https://buymeacoffee.com/psykiateroverblik";
 
-const problemPages = [
-  ["akut-krise", "Akut krise"],
-  ["generelt-menneskeligt-sjaeleligt", "Generelt / menneskeligt / sjæleligt"],
-  ["ensomhed", "Ensomhed"],
-  ["vaeresteder-og-faellesskaber", "Væresteder og fællesskaber"],
-  ["boern-og-unge", "Børn og unge"],
-  ["studerende", "Studerende"],
-  ["foraeldre-familie", "Forældre / familie"],
-  ["arbejdsliv", "Arbejdsliv"],
-  ["aeldre", "Ældre"],
-  ["lgbt-koen-seksualitet", "LGBT+ / køn / seksualitet"],
-  ["paaroerende-til-psykisk-syge", "Pårørende til psykisk syge"],
-  ["vold-chikane-stalking-psykisk-vold", "Vold / chikane / stalking / psykisk vold"],
-  ["maends-mentale-sundhed", "Mænds mentale sundhed"],
-  ["misbrug", "Misbrug"],
-  ["selvskade", "Selvskade"],
-  ["patientstoette-og-rettigheder", "Patientstøtte og rettigheder"],
-  ["foreninger-for-psykiske-sygdomme", "Foreninger for psykiske sygdomme"]
+const legacyFiles = [
+  "adhd.html",
+  "autisme.html",
+  "boern-unge-psykiatere.html",
+  "information.html",
+  "klinikker.html",
+  "kontakt.html",
+  "krisehjaelp.html",
+  "nyttige-links.html",
+  "offentlige-klinikker.html",
+  "offentlige-psykiatere-info.html",
+  "om-os.html",
+  "om-psykiatere.html",
+  "private-psykiatere-info.html",
+  "privatlivspolitik.html",
+  "problemstillinger.html",
+  "ressourcer-region-hovedstaden.html",
+  "ressourcer-region-midtjylland.html",
+  "ressourcer-region-nordjylland.html",
+  "ressourcer-region-sjaelland.html",
+  "ressourcer-region-syddanmark.html",
+  "voksen.html"
+];
+
+const generatedDirs = [
+  "boern-og-unge",
+  "brug-for-hjaelp-nu",
+  "brug-for-hjaelp-nu-i-krise",
+  "find-psykiater",
+  "information",
+  "nyttige-links-og-tilbud",
+  "om",
+  "ressourcer",
+  "voksen"
 ];
 
 const regionPages = [
@@ -33,26 +49,38 @@ const regionPages = [
   ["region-nordjylland", "Region Nordjylland", "data/region-nordjylland.json"]
 ];
 
-const kommunePages = [
-  ["koebenhavn", "København"],
-  ["frederiksberg", "Frederiksberg"],
-  ["aarhus", "Aarhus"],
-  ["odense", "Odense"],
-  ["aalborg", "Aalborg"],
-  ["anden-kommune", "Bor du i en anden kommune?"]
+const situationPages = [
+  ["akut-krise", "Akut krise", "Linket fører til siden Akut krise."],
+  ["generelt-menneskeligt-sjaeleligt", "Generelt / menneskeligt / sjæleligt", "Plads til tre kontrollerede eksempler og neutrale links."],
+  ["ensomhed", "Ensomhed", "Plads til Socialkompas-link og tre kontrollerede eksempler."],
+  ["vaeresteder-og-faellesskaber", "Væresteder og fællesskaber", "Plads til Socialkompas-link og tre kontrollerede eksempler."],
+  ["boern-unge-og-familie", "Børn, unge og familie", "Plads til links fra kombu.dk, Socialkompas og tre eksempler."],
+  ["studerende", "Studerende", "Husk fx SU-kontoret, studievejledning, studenterrådgivning og universitetspræst."],
+  ["aeldre", "Ældre", "Plads til Socialkompas, Ældre Sagen og to kontrollerede tilbud."],
+  ["paaroerende-til-psykisk-syge", "Pårørende til psykisk syge", "Plads til fx Bedre Psykiatri og regionale pårørendetilbud."],
+  ["maends-mentale-sundhed", "Mænds mentale sundhed", "Plads til Socialkompas-søgning og tre kontrollerede eksempler."],
+  ["i-sorg", "I sorg", "Plads til Socialkompas-søgning, Sorgcentret og tre kontrollerede eksempler."],
+  ["patientstoette-og-rettigheder", "Patientstøtte og rettigheder", "Husk regionens patienttelefon og officielle rettighedskilder."]
 ];
 
 const informationPages = [
   ["offentlig-psykiater-ydernummer", "Offentlig psykiater/ydernummer"],
   ["behandlingsgaranti", "Behandlingsgaranti"],
   ["egen-laege-vs-praktiserende-psykiater", "Egen læge vs. praktiserende psykiater"],
-  ["patientrettigheder", "Patientrettigheder"],
-  ["de-store-hjaelpere", "De store hjælpere"],
-  ["psykiatrifonden", "Psykiatrifonden"],
-  ["livslinien", "Livslinien"]
+  ["patientrettigheder", "Patientrettigheder"]
 ];
 
 const pageRoutes = [];
+
+function cleanupOldStructure() {
+  legacyFiles.forEach((file) => {
+    fs.rmSync(path.join(root, file), { force: true });
+  });
+
+  generatedDirs.forEach((dir) => {
+    fs.rmSync(path.join(root, dir), { recursive: true, force: true });
+  });
+}
 
 function depth(route) {
   return route ? route.split("/").length : 0;
@@ -79,7 +107,7 @@ function link(fromRoute, toRoute, label, className = "") {
   return `<a${classAttr} href="${routeHref(fromRoute, toRoute)}">${label}</a>`;
 }
 
-function card(fromRoute, title, text, toRoute, label = "Læs mere") {
+function card(fromRoute, title, text, toRoute, label = "Åbn") {
   return `
     <article class="overview-card">
       <h2>${title}</h2>
@@ -88,8 +116,20 @@ function card(fromRoute, title, text, toRoute, label = "Læs mere") {
     </article>`;
 }
 
+function cardGrid(fromRoute, items, wide = false) {
+  return `<div class="overview-grid${wide ? " two-column" : ""}">
+${items.map((item) => card(fromRoute, item[0], item[1], item[2], item[3] || "Åbn")).join("\n")}
+</div>`;
+}
+
 function placeholder(title, text = "Denne side er under opbygning.") {
-  return `<div class="placeholder-note"><p>${text}</p></div>`;
+  return `<div class="placeholder-note"><h2>${title}</h2><p>${text}</p></div>`;
+}
+
+function detailList(items) {
+  return `<ul class="link-list">
+${items.map((item) => `<li>${item}</li>`).join("\n")}
+</ul>`;
 }
 
 function nav(fromRoute) {
@@ -99,46 +139,78 @@ function nav(fromRoute) {
             <a class="nav-parent" data-nav="forside" href="${routeHref(fromRoute, "")}">Forside</a>
           </div>
           <div class="nav-group">
-            <a class="nav-parent" data-nav="find" href="${routeHref(fromRoute, "find-psykiater")}">Find psykiater</a>
+            <a class="nav-parent nav-parent-dropdown" data-nav="find" href="${routeHref(fromRoute, "find-psykiater")}">Find psykiater</a>
             <div class="nav-dropdown">
-              <a href="${routeHref(fromRoute, "voksen")}">Voksen</a>
-              <a href="${routeHref(fromRoute, "voksen/offentlige-psykiatere")}">Offentlige psykiatere</a>
-              <a href="${routeHref(fromRoute, "voksen/private-psykiatere")}">Private psykiatere</a>
-              <a href="${routeHref(fromRoute, "boern-og-unge")}">Børn og unge</a>
-              <a href="${routeHref(fromRoute, "boern-og-unge/offentlige-boerne-og-ungdomspsykiatere")}">Offentlige børne- og ungdomspsykiatere</a>
-              <a href="${routeHref(fromRoute, "boern-og-unge/private-boerne-og-ungdomspsykiatere")}">Private børne- og ungdomspsykiatere</a>
+              <div class="nav-subgroup">
+                <a class="nav-subparent" href="${routeHref(fromRoute, "find-psykiater/voksenpsykiater")}">Voksenpsykiater</a>
+                <div class="nav-submenu">
+                  <a href="${routeHref(fromRoute, "find-psykiater/voksenpsykiater/offentlige-psykiatere")}">Offentlige psykiatere</a>
+                  <a href="${routeHref(fromRoute, "find-psykiater/voksenpsykiater/private-psykiatere")}">Private psykiatere</a>
+                </div>
+              </div>
+              <div class="nav-subgroup">
+                <a class="nav-subparent" href="${routeHref(fromRoute, "find-psykiater/boerne-og-ungdomspsykiater")}">Børne- og ungdomspsykiater</a>
+                <div class="nav-submenu">
+                  <a href="${routeHref(fromRoute, "find-psykiater/boerne-og-ungdomspsykiater/er-du-foraelder")}">Er du forælder?</a>
+                  <a href="${routeHref(fromRoute, "find-psykiater/boerne-og-ungdomspsykiater/offentlige-boerne-og-ungdomspsykiatere")}">Offentlige børn/unge</a>
+                  <a href="${routeHref(fromRoute, "find-psykiater/boerne-og-ungdomspsykiater/private-boerne-og-ungdomspsykiatere")}">Private børn/unge</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="nav-group">
-            <a class="nav-parent" data-nav="ressourcer" href="${routeHref(fromRoute, "ressourcer")}">Ressourcer</a>
+            <a class="nav-parent nav-parent-dropdown" data-nav="nyttige" href="${routeHref(fromRoute, "nyttige-links-og-tilbud")}">Nyttige links og tilbud</a>
             <div class="nav-dropdown">
-              <a href="${routeHref(fromRoute, "ressourcer/regioner")}">Regioner</a>
-              <a href="${routeHref(fromRoute, "ressourcer/kommuner")}">Kommuner</a>
-              <a href="${routeHref(fromRoute, "ressourcer/andre-tilbudsydere")}">Andre tilbudsydere</a>
-              <a href="${routeHref(fromRoute, "ressourcer/problemstillinger")}">Problemstillinger</a>
+              <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/akut-krise")}">Akut krise</a>
+              <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/brug-for-et-menneske-at-tale-med-hurtigst-muligt")}">Tal med nogen</a>
+              <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/gode-overblik")}">Gode overblik</a>
+              <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/foreninger-for-psykiske-sygdomme")}">Foreninger</a>
+              <div class="nav-subgroup">
+                <a class="nav-subparent" href="${routeHref(fromRoute, "nyttige-links-og-tilbud/maaske-du-er-i-denne-situation")}">Måske du er i denne situation</a>
+                <div class="nav-submenu nav-submenu-wide">
+                  <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/akut-krise")}">Akut krise</a>
+                  <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/generelt-menneskeligt-sjaeleligt")}">Generelt / sjæleligt</a>
+                  <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/ensomhed")}">Ensomhed</a>
+                  <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/studerende")}">Studerende</a>
+                  <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/paaroerende-til-psykisk-syge")}">Pårørende</a>
+                  <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/patientstoette-og-rettigheder")}">Patientstøtte</a>
+                </div>
+              </div>
+              <div class="nav-subgroup">
+                <a class="nav-subparent" href="${routeHref(fromRoute, "nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud")}">Regionernes tilbud</a>
+                <div class="nav-submenu">
+                  <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/region-hovedstaden")}">Region Hovedstaden</a>
+                  <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/region-sjaelland")}">Region Sjælland</a>
+                  <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/region-syddanmark")}">Region Syddanmark</a>
+                  <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/region-midtjylland")}">Region Midtjylland</a>
+                  <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/region-nordjylland")}">Region Nordjylland</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="nav-group">
-            <a class="nav-parent" data-nav="information" href="${routeHref(fromRoute, "information")}">Information</a>
+            <a class="nav-parent nav-parent-dropdown" data-nav="information" href="${routeHref(fromRoute, "information")}">Information</a>
             <div class="nav-dropdown">
               <a href="${routeHref(fromRoute, "information/offentlig-psykiater-ydernummer")}">Offentlig psykiater/ydernummer</a>
               <a href="${routeHref(fromRoute, "information/behandlingsgaranti")}">Behandlingsgaranti</a>
+              <a href="${routeHref(fromRoute, "information/egen-laege-vs-praktiserende-psykiater")}">Egen læge vs. psykiater</a>
               <a href="${routeHref(fromRoute, "information/patientrettigheder")}">Patientrettigheder</a>
-              <a href="${routeHref(fromRoute, "information/de-store-hjaelpere")}">De store hjælpere</a>
             </div>
           </div>
           <div class="nav-group">
-            <a class="nav-parent" data-nav="om" href="${routeHref(fromRoute, "om")}">Om</a>
+            <a class="nav-parent nav-parent-dropdown" data-nav="om" href="${routeHref(fromRoute, "om")}">Om</a>
             <div class="nav-dropdown">
               <a href="${routeHref(fromRoute, "om/motivation")}">Motivation</a>
               <a href="${routeHref(fromRoute, "om/disclaimer")}">Disclaimer</a>
               <a href="${routeHref(fromRoute, "om/kontakt")}">Kontakt</a>
               <a href="${routeHref(fromRoute, "om/privatlivspolitik")}">Privatlivspolitik</a>
-              <a href="${routeHref(fromRoute, "om/stoet-siden")}">Støt siden</a>
             </div>
           </div>
           <div class="nav-group">
-            <a class="nav-parent" data-nav="krise" href="${routeHref(fromRoute, "brug-for-hjaelp-nu")}">Brug for hjælp NU</a>
+            <a class="nav-parent" data-nav="akut" href="${routeHref(fromRoute, "nyttige-links-og-tilbud/akut-krise")}">Akut krise</a>
+          </div>
+          <div class="nav-group">
+            <a class="nav-parent" data-nav="menneske" href="${routeHref(fromRoute, "nyttige-links-og-tilbud/brug-for-et-menneske-at-tale-med-hurtigst-muligt")}">Tal med nogen</a>
           </div>
         </nav>`;
 }
@@ -146,7 +218,10 @@ function nav(fromRoute) {
 function layout(page) {
   const fromRoute = page.route || "";
   const canonical = `${siteUrl}${fromRoute ? `/${fromRoute}/` : "/"}`;
-  pageRoutes.push(fromRoute);
+
+  if (page.includeInSitemap !== false && !pageRoutes.includes(fromRoute)) {
+    pageRoutes.push(fromRoute);
+  }
 
   return `<!doctype html>
 <html lang="da">
@@ -190,14 +265,15 @@ ${page.body}
       <div class="container footer-grid">
         <div>
           <strong>Psykiater Overblik</strong>
-          <p>Uafhængigt overblik over psykiatrisk hjælp, klinikker og ressourcer i Danmark.</p>
+          <p>Uafhængigt overblik over psykiatrisk hjælp, klinikker og nyttige links i Danmark.</p>
         </div>
         <nav aria-label="Footer navigation">
           <a href="${routeHref(fromRoute, "om")}">Om</a>
           <a href="${routeHref(fromRoute, "om/kontakt")}">Kontakt</a>
           <a href="${routeHref(fromRoute, "om/disclaimer")}">Disclaimer</a>
           <a href="${routeHref(fromRoute, "om/privatlivspolitik")}">Privatlivspolitik</a>
-          <a href="${routeHref(fromRoute, "brug-for-hjaelp-nu")}">Brug for hjælp NU</a>
+          <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/akut-krise")}">Akut krise</a>
+          <a href="${routeHref(fromRoute, "nyttige-links-og-tilbud/brug-for-et-menneske-at-tale-med-hurtigst-muligt")}">Brug for et menneske at tale med hurtigst muligt?</a>
           <a href="${supportUrl}" target="_blank" rel="noopener noreferrer">Støt siden</a>
         </nav>
       </div>
@@ -207,7 +283,7 @@ ${page.body}
 `;
 }
 
-function pageHero(page, content) {
+function pageShell(page, content) {
   return `
     <main id="indhold" class="page-main">
       <article class="content-article">
@@ -236,14 +312,8 @@ function writeSimplePage(route, title, intro, content, eyebrow = title, descript
     route,
     title,
     description,
-    body: pageHero({ eyebrow, heading: title, intro }, content)
+    body: pageShell({ eyebrow, heading: title, intro }, content)
   }));
-}
-
-function cardGrid(fromRoute, items, wide = false) {
-  return `<div class="overview-grid${wide ? " two-column" : ""}">
-${items.map((item) => card(fromRoute, item[0], item[1], item[2], item[3] || "Åbn")).join("\n")}
-</div>`;
 }
 
 function landingPage() {
@@ -254,12 +324,12 @@ function landingPage() {
         <div class="container hero-content">
           <p class="eyebrow">Komplet overblik</p>
           <h1>Find vej i psykiatrisk hjælp</h1>
-          <p class="hero-copy">Find psykiater, akut hjælp, nyttige ressourcer og forklaringer om henvisning, ydernummer, rettigheder og ventetid.</p>
+          <p class="hero-copy">Find psykiater, akut hjælp og nyttige links og tilbud samlet i én rolig struktur.</p>
           <div class="hero-actions" aria-label="Vigtige indgange">
             ${link(route, "find-psykiater", "Find psykiater", "button button-primary")}
-            ${link(route, "brug-for-hjaelp-nu", "Brug for hjælp NU", "button button-urgent")}
-            ${link(route, "ressourcer", "Nyttige ressourcer", "button button-secondary")}
-            ${link(route, "information", "Information", "button button-secondary")}
+            ${link(route, "nyttige-links-og-tilbud/akut-krise", "Akut krise", "button button-urgent")}
+            ${link(route, "nyttige-links-og-tilbud/brug-for-et-menneske-at-tale-med-hurtigst-muligt", "Brug for et menneske at tale med hurtigst muligt?", "button button-secondary")}
+            ${link(route, "nyttige-links-og-tilbud", "Nyttige links og tilbud", "button button-secondary")}
           </div>
         </div>
       </section>
@@ -267,14 +337,14 @@ function landingPage() {
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Forside</p>
-            <h2>Vælg den vej, der passer til din situation</h2>
-            <p>Siden er bygget som et roligt overblik over offentlige og private indgange, akut hjælp, ressourcer og forklarende information.</p>
+            <h2>Komplet overblik</h2>
+            <p>Forsiden sender brugeren videre til de vigtigste spor: find psykiater, akut krise, telefonrådgivning og nyttige links og tilbud.</p>
           </div>
           ${cardGrid(route, [
-            ["Find psykiater", "Vælg voksen, børn og unge, offentlig eller privat psykiater.", "find-psykiater"],
-            ["Brug for hjælp NU", "Akut side med 112, lægevagt, skadestue og telefonrådgivninger.", "brug-for-hjaelp-nu"],
-            ["Nyttige ressourcer", "Find regionale, kommunale og tematiske ressourcer.", "ressourcer"],
-            ["Information", "Læs om ydernummer, behandlingsgaranti, rettigheder og centrale hjælpere.", "information"]
+            ["Find psykiater", "Voksen, børn/unge, offentlig eller privat.", "find-psykiater"],
+            ["Akut krise", "Ring 112 ved umiddelbar fare, og find officielle akutte indgange i regionerne.", "nyttige-links-og-tilbud/akut-krise"],
+            ["Brug for et menneske at tale med hurtigst muligt?", "Gratis og anonyme telefonrådgivninger, hvor nogen kan lytte.", "nyttige-links-og-tilbud/brug-for-et-menneske-at-tale-med-hurtigst-muligt"],
+            ["Nyttige links og tilbud", "Fører dig til den samlede oversigt med akuthjælp, overblik, foreninger, situationer og regioner.", "nyttige-links-og-tilbud"]
           ])}
         </div>
       </section>
@@ -282,7 +352,7 @@ function landingPage() {
         <div class="container split-layout">
           <div>
             <h2>Et uafhængigt informationssite</h2>
-            <p>Psykiater Overblik hjælper med struktur og overblik, men oplysninger kan ændre sig. Tjek altid klinikkers, regioners, kommuners og organisationers egne kilder.</p>
+            <p>Psykiater Overblik hjælper med struktur og overblik, men oplysninger kan ændre sig. Tjek altid klinikkers, regioners, myndigheders og organisationers egne kilder.</p>
           </div>
           <aside class="disclaimer" aria-label="Vigtig information">
             <strong>Vigtig information</strong>
@@ -295,20 +365,45 @@ function landingPage() {
   writePage(route, layout({
     route,
     title: "Komplet overblik",
-    description: "Find psykiater, akut hjælp, nyttige ressourcer og information om psykiatrisk hjælp i Danmark.",
+    description: "Find psykiater, akut hjælp og nyttige links og tilbud om psykisk og psykiatrisk hjælp i Danmark.",
     body
   }));
 }
 
+function sundhedDkCard(typeLabel) {
+  return `
+          <div class="resource-card">
+            <h2>Gå til sundhed.dk</h2>
+            <p>Gå til sundhed.dk’s egen komplette oversigt over Danmarks speciallæger, der tilhører det offentlige, hvor du under ‘behandlere’ kan vælge ‘${typeLabel}’ og sortere efter bl.a. afstand, ventetid og om de har åbent for nye patienter.</p>
+            ${externalLink("https://www.sundhed.dk/borger/guides/find-behandler/", "Åbn sundhed.dk’s find behandler")}
+          </div>`;
+}
+
+function publicFlowList() {
+  return detailList([
+    "Henvisningen kommer ofte fra fx egen læge.",
+    "En offentlig psykiater betyder typisk en praktiserende speciallæge med ydernummer.",
+    "Ventetider og adgang kan variere, så tjek altid sundhed.dk og den konkrete behandler."
+  ]);
+}
+
+function selfPayerInfo() {
+  return `
+          <aside class="disclaimer spaced">
+            <strong>Forsikringers interne behandlingsnetværk vs. selvbetaler</strong>
+            ${detailList([
+              "Hvis du vil anvende din sundhedsforsikring, så kontakt forsikringsselskabet og hør, hvilke psykiatere der er i deres netværk.",
+              "Hvis du er selvbetaler, kan du som udgangspunkt vælge frit, medmindre klinikken eksplicit skriver, at de ikke tager selvbetalere.",
+              "Klinikker kan i perioder være travle eller lukke midlertidigt for nye selvbetalere."
+            ])}
+          </aside>`;
+}
+
 function privatePsychiatristsPage() {
-  const route = "voksen/private-psykiatere";
+  const route = "find-psykiater/voksenpsykiater/private-psykiatere";
   const content = `
           <div class="sortable-table-intro">
-            <p>Private psykiatere kan have forskellige betalingsformer. Nogle arbejder via forsikringsselskabers interne behandlingsnetværk, andre tager imod selvbetalere. Tjek altid pris, ventetid og henvisningskrav direkte hos klinikken.</p>
             <p>Tabellen indlæses fra CSV-filen <strong>Tabel - Private Psykiatere - Sheet1.csv</strong>. Klik på en kolonneoverskrift for at sortere tabellen.</p>
-          </div>
-          <div class="page-actions">
-            ${link(route, "ressourcer", "Se også ressourcer, du kan bruge i ventetiden", "button button-secondary")}
           </div>
           <div class="result-bar" aria-live="polite">
             <p id="private-result-count">Indlæser private psykiatere...</p>
@@ -336,22 +431,64 @@ function privatePsychiatristsPage() {
               <tbody id="private-psychiatrists-body"></tbody>
             </table>
           </div>
+          ${selfPayerInfo()}
+          <div class="page-actions">
+            ${link(route, "nyttige-links-og-tilbud", "Se også nyttige links og tilbud, du kan udnytte i ventetiden", "button button-secondary")}
+          </div>
           <p class="small-note">Oplysninger kan være ufuldstændige eller ændre sig. Kontakt klinikken direkte, før du booker eller træffer beslutninger.</p>`;
 
   writeSimplePage(
     route,
     "Private psykiatere",
-    "Sorter en tabel over private psykiatere i Danmark. Klik på kolonneoverskrifterne for at sortere stigende eller faldende.",
+    "Tabel og kort information om private psykiatere, selvbetalerforløb og forsikringsnetværk.",
     content,
-    "Voksen",
+    "Voksenpsykiater",
     "Sorter private psykiatere efter klinik, region, by, postnummer, kontakt, priser, selvbetaler og online optag."
   );
 }
 
+function publicAdultPage() {
+  const route = "find-psykiater/voksenpsykiater/offentlige-psykiatere";
+  writeSimplePage(route, "Offentlige psykiatere", "Find vej til offentlige psykiatere med ydernummer via sundhed.dk.", `
+          ${sundhedDkCard("psykiater")}
+          <div class="resource-card spaced">
+            <h2>Lidt info om flowet i det offentlige</h2>
+            ${publicFlowList()}
+          </div>
+          <div class="page-actions">
+            ${link(route, "nyttige-links-og-tilbud", "Se også nyttige links og tilbud, du kan udnytte i ventetiden", "button button-secondary")}
+          </div>
+          <aside class="disclaimer"><strong>Vigtig information</strong><p>Tjek altid sundhed.dk, egen læge eller den relevante klinik for aktuelle oplysninger.</p></aside>`, "Voksenpsykiater");
+}
+
+function publicYouthPage() {
+  const route = "find-psykiater/boerne-og-ungdomspsykiater/offentlige-boerne-og-ungdomspsykiatere";
+  writeSimplePage(route, "Find Børne- og ungdomspsykiater", "Find vej til offentlige børne- og ungdomspsykiatere via sundhed.dk.", `
+          ${sundhedDkCard("Børne- og ungdomspsykiater")}
+          <div class="resource-card spaced">
+            <h2>Lidt info om flowet i det offentlige</h2>
+            ${publicFlowList()}
+          </div>
+          <div class="page-actions">
+            ${link(route, "nyttige-links-og-tilbud", "Se også nyttige links og tilbud, du kan udnytte i ventetiden", "button button-secondary")}
+          </div>
+          <aside class="disclaimer"><strong>Vigtig information</strong><p>Tjek altid sundhed.dk, egen læge eller den relevante klinik for aktuelle oplysninger.</p></aside>`, "Børne- og ungdomspsykiater");
+}
+
+function privateYouthPage() {
+  const route = "find-psykiater/boerne-og-ungdomspsykiater/private-boerne-og-ungdomspsykiatere";
+  writeSimplePage(route, "Private børne- og ungdomspsykiatere", "Tabel med private børne- og ungdomspsykiatere kommer snart.", `
+          ${placeholder("Tabel", "Indhold kommer snart.")}
+          ${selfPayerInfo()}
+          <div class="page-actions">
+            ${link(route, "nyttige-links-og-tilbud", "Se også nyttige links og tilbud, du kan udnytte i ventetiden", "button button-secondary")}
+          </div>`, "Børne- og ungdomspsykiater");
+}
+
 function regionResourcePage(slug, regionName, dataFile) {
-  const route = `ressourcer/regioner/${slug}`;
+  const route = `nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/${slug}`;
   const content = `
-          <a class="back-link" href="${routeHref(route, "ressourcer/regioner")}">Tilbage til Regionernes tilbud</a>
+          <a class="back-link" href="${routeHref(route, "nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud")}">Tilbage til regionernes tilbud</a>
           <aside class="crisis-box region-crisis-box">
             <strong>Akut hjælp</strong>
             <p>Ved akut livsfare eller akut fare for dig selv eller andre: Ring 112.</p>
@@ -401,100 +538,216 @@ function regionResourcePage(slug, regionName, dataFile) {
   );
 }
 
+function usefulLinksOverview() {
+  const route = "nyttige-links-og-tilbud";
+  writeSimplePage(route, "Nyttige links og tilbud", "Nyttige links og tilbud samlet efter akut hjælp, gode overblik, foreninger, situationer og regionernes tilbud.", cardGrid(route, [
+    ["Akut krise", "Ring 112 ved umiddelbar fare, og find officiel akut hjælp i din region.", "nyttige-links-og-tilbud/akut-krise"],
+    ["Brug for et menneske at tale med hurtigst muligt?", "Gratis og anonyme telefonrådgivninger, hvor nogen kan lytte.", "nyttige-links-og-tilbud/brug-for-et-menneske-at-tale-med-hurtigst-muligt"],
+    ["Gode overblik", "Socialkompas, sundhed.dk, RådgivningsDanmark og kombu.dk.", "nyttige-links-og-tilbud/gode-overblik"],
+    ["Foreninger for psykiske sygdomme", "Plads til Depressionsforeningen, Angstforeningen og andre foreninger.", "nyttige-links-og-tilbud/foreninger-for-psykiske-sygdomme"],
+    ["Måske du er i denne situation", "Find links efter situation som ensomhed, sorg, studerende og pårørende.", "nyttige-links-og-tilbud/maaske-du-er-i-denne-situation"],
+    ["Regionernes psykiatriske og sociale tilbud", "Regionale tilbud samlet i søgbare tabeller.", "nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud"]
+  ], true), "Nyttige links og tilbud");
+}
+
+function usefulOverviewsPage() {
+  const route = "nyttige-links-og-tilbud/gode-overblik";
+  writeSimplePage(route, "Gode overblik", "Generelle indgange til hjælp og overblik.", `
+          <div class="resource-grid">
+            <article class="resource-card">
+              <h2>Socialkompas</h2>
+              <p>Vejledning til hvordan man bruger Socialkompas.</p>
+              ${externalLink("https://socialkompas.dk/", "Åbn socialkompas.dk")}
+            </article>
+            <article class="resource-card">
+              <h2>Sundhedstilbud</h2>
+              <p>Her er mange tilbud samlet udbudt af regionerne. Oversigten er ikke helt fyldestgørende, derfor har siden også en samlet underside med regionernes psykiatriske og sociale tilbud.</p>
+              ${externalLink("https://www.sundhed.dk/sundhedsfaglig/opslag-og-vaerktoejer/sundhedstilbud/", "Åbn sundhed.dk sundhedstilbud")}
+            </article>
+            <article class="resource-card">
+              <h2>RådgivningsDanmark</h2>
+              <p>Vejledning til hjemmesiden.</p>
+              ${externalLink("https://raadgivningsdanmark.dk/find-raadgivning/", "Find rådgivning")}
+            </article>
+            <article class="resource-card">
+              <h2>Kombu</h2>
+              <p>Vejledning til hjemmesiden.</p>
+              ${externalLink("https://kombu.dk/hjaelp-tilbud/kommunale-regionale-nationale-tilbud", "Åbn kombu.dk")}
+            </article>
+          </div>
+          <div class="page-actions">
+            ${link(route, "nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud", "Regionernes psykiatriske og sociale tilbud", "button button-secondary")}
+          </div>`, "Nyttige links og tilbud");
+}
+
+function acuteResourcesPage() {
+  const route = "nyttige-links-og-tilbud/akut-krise";
+  writeSimplePage(route, "Akut krise", "Ring 112 ved umiddelbar fare, og find officiel akut hjælp i din region.", `
+          <aside class="crisis-box">
+            <strong>Ring 112 nu</strong>
+            <p>Ring 112 nu, hvis du eller en anden er i umiddelbar fare, fx ved et igangværende selvmordsforsøg, konkrete planer om at gøre skade på sig selv eller andre, alvorlig forgiftning eller behov for akut ambulance eller politi.</p>
+          </aside>
+          <section class="resource-card spaced">
+            <h2>Er du pårørende?</h2>
+            <p>Du må gerne ringe på vegne af en person, du er bekymret for.</p>
+          </section>
+          <section class="resource-card spaced">
+            <h2>Find den officielle akutte hjælp i din region</h2>
+            <p>Vælg den region, du befinder dig i. Linket fører til regionens officielle vejledning med aktuelle telefonnumre, adresser og information om, hvor du skal henvende dig.</p>
+            ${detailList([
+              externalLink("https://www.regionh.dk/sundhed/akut/sider/default.aspx", "Region Hovedstaden"),
+              externalLink("https://www.regionsjaelland.dk/sundhed/akuthjaelp", "Region Sjælland"),
+              externalLink("https://regionsyddanmark.dk/patienter-og-parorende/akuthjaelp", "Region Syddanmark"),
+              externalLink("https://www.sundhed.rm.dk/akuthjalp/", "Region Midtjylland"),
+              externalLink("https://rn.dk/Sundhed/Akut-sygdom", "Region Nordjylland")
+            ])}
+            <p class="small-note">Oplysningerne på de regionale sider vedligeholdes af regionerne. Følg altid den officielle vejledning på den side, du åbner.</p>
+          </section>
+          <div class="page-actions">
+            ${link(route, "nyttige-links-og-tilbud/brug-for-et-menneske-at-tale-med-hurtigst-muligt", "Brug for et menneske at tale med hurtigst muligt?", "button button-secondary")}
+            ${link(route, "nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud", "Regionernes psykiatriske og sociale tilbud", "button button-secondary")}
+          </div>`, "Akut hjælp");
+}
+
+function talkSoonPage() {
+  const route = "nyttige-links-og-tilbud/brug-for-et-menneske-at-tale-med-hurtigst-muligt";
+  writeSimplePage(
+    route,
+    "Brug for et menneske at tale med hurtigst muligt?",
+    "Gratis og anonyme telefonrådgivninger, hvor nogen kan lytte, når livet føles svært.",
+    `
+          <aside class="crisis-box">
+            <strong>Ring 112 ved akut fare</strong>
+            <p>Ring 112, hvis du eller en anden er i umiddelbar fare. Rådgivningerne nedenfor erstatter ikke akut lægehjælp eller psykiatrisk akutbehandling.</p>
+          </aside>
+          <p>Her finder du gratis og anonyme telefonrådgivninger, hvor nogen kan lytte, når livet føles svært.</p>
+          <p>Her kan du tale med nogen, som er vant til at støtte mennesker i svære situationer.</p>
+          <div class="resource-grid">
+            <article class="resource-card">
+              <h2>Psykiatrifonden</h2>
+              <p>Erfarne rådgivere med faglig viden om psykiske problemer og kriser.</p>
+              ${externalLink("https://psykiatrifonden.dk/hjaelp-raadgivning", "Åbn Psykiatrifonden")}
+            </article>
+            <article class="resource-card">
+              <h2>SIND</h2>
+              <p>Støtte og rådgivning til psykisk sårbare, mennesker med psykisk sygdom og pårørende.</p>
+              ${externalLink("https://sind.dk/faa-hjaelp/sind-raadgivning", "Åbn SIND rådgivning")}
+            </article>
+            <article class="resource-card">
+              <h2>Livslinien</h2>
+              <p>Særligt relevant ved selvmordstanker og alvorlig livskrise.</p>
+              ${externalLink("https://www.livslinien.dk/", "Åbn Livslinien")}
+            </article>
+            <article class="resource-card">
+              <h2>Startlinjen</h2>
+              <p>Anonym samtale om blandt andet ensomhed, angst, depression og svære livssituationer.</p>
+              ${externalLink("https://startlinjen.dk/", "Åbn Startlinjen")}
+            </article>
+            <article class="resource-card">
+              <h2>Sct. Nicolai Tjenesten</h2>
+              <p>Medmenneskelig samtale om eksempelvis ensomhed, sorg og bekymringer.</p>
+              ${externalLink("https://kirkenskorshaer.dk/sociale-tilbud/sct-nicolai-tjenesten/", "Åbn Sct. Nicolai Tjenesten")}
+            </article>
+          </div>
+          <p class="small-note">Tjek altid åbningstider og kontaktmuligheder på rådgivningernes egne sider.</p>
+          <div class="page-actions">
+            ${link(route, "nyttige-links-og-tilbud/akut-krise", "Akut krise", "button button-urgent")}
+          </div>`,
+    "Telefonrådgivning"
+  );
+}
+
+function associationsPage() {
+  const route = "nyttige-links-og-tilbud/foreninger-for-psykiske-sygdomme";
+  writeSimplePage(route, "Foreninger for psykiske sygdomme", "Plads til kontrollerede links til relevante foreninger.", `
+          ${detailList([
+            "Depressionsforeningen - indsæt kontrolleret link.",
+            "Angstforeningen - indsæt kontrolleret link.",
+            "Osv. - tilføj kun foreninger, hvor link og relevans er kontrolleret."
+          ])}
+          <p class="small-note">Undgå at kopiere foreningernes egne beskrivelser direkte. Skriv korte, neutrale beskrivelser og link til kilden.</p>`, "Nyttige links og tilbud");
+}
+
+function situationOverviewPage() {
+  const route = "nyttige-links-og-tilbud/maaske-du-er-i-denne-situation";
+  writeSimplePage(route, "Måske du er i denne situation", "Find links og tilbud efter situation.", cardGrid(route, situationPages.map(([slug, title, text]) => [
+    title,
+    text,
+    `nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/${slug}`
+  ]), true), "Nyttige links og tilbud");
+
+  situationPages.forEach(([slug, title, text]) => {
+    const situationRoute = `nyttige-links-og-tilbud/maaske-du-er-i-denne-situation/${slug}`;
+    const extra = slug === "akut-krise"
+      ? `<div class="page-actions">${link(situationRoute, "nyttige-links-og-tilbud/akut-krise", "Akut krise", "button button-primary")}</div>`
+      : "";
+    writeSimplePage(situationRoute, title, text, `
+          ${placeholder(title, text)}
+          ${extra}
+          <p class="small-note">Tilføj kun konkrete tilbud, når link, målgruppe og adgang er kontrolleret.</p>`, "Måske du er i denne situation");
+  });
+}
+
+function regionalOverviewPage() {
+  const route = "nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud";
+  writeSimplePage(route, "Regionernes psykiatriske og sociale tilbud", "Vælg region for at se regionale tilbud i søgbare tabeller.", `
+          <p>Her ligger de eksisterende regionsdata samlet som undersider for hver region.</p>
+          ${cardGrid(route, regionPages.map(([slug, name]) => [
+            name,
+            `Se psykiatriske og sociale tilbud i ${name}.`,
+            `nyttige-links-og-tilbud/regionernes-psykiatriske-og-sociale-tilbud/${slug}`,
+            `Åbn ${name}`
+          ]), true)}`, "Nyttige links og tilbud");
+  regionPages.forEach(([slug, name, dataFile]) => regionResourcePage(slug, name, dataFile));
+}
+
 function buildPages() {
+  cleanupOldStructure();
   landingPage();
 
-  writeSimplePage("find-psykiater", "Find psykiater", "Vælg den indgang, der passer bedst: voksen, børn og unge, offentlig eller privat.", cardGrid("find-psykiater", [
-    ["Voksen", "Oversigt over voksenpsykiatri med offentlige og private indgange.", "voksen"],
-    ["Børn og unge", "Oversigt over børne- og ungdomspsykiatri.", "boern-og-unge"],
-    ["Offentlig psykiater", "Vej til offentlige psykiatere med ydernummer via sundhed.dk.", "voksen/offentlige-psykiatere"],
-    ["Privat psykiater", "Sorterbar tabel over private psykiatere.", "voksen/private-psykiatere"]
+  writeSimplePage("find-psykiater", "Find psykiater", "Vælg mellem voksenpsykiater og børne- og ungdomspsykiater.", cardGrid("find-psykiater", [
+    ["Voksenpsykiater", "Offentlig eller privat psykiater for voksne.", "find-psykiater/voksenpsykiater"],
+    ["Børne- og ungdomspsykiater", "Offentlig eller privat børne- og ungdomspsykiater.", "find-psykiater/boerne-og-ungdomspsykiater"]
   ], true), "Find psykiater");
 
-  writeSimplePage("voksen", "Voksen", "Oversigtsside for voksenpsykiatri.", cardGrid("voksen", [
-    ["Offentlige psykiatere", "Find vej til offentlige psykiatere med ydernummer.", "voksen/offentlige-psykiatere"],
-    ["Private psykiatere", "Se den sorterbare tabel over private psykiatere.", "voksen/private-psykiatere"]
-  ], true), "Voksenpsykiatri");
-
-  writeSimplePage("voksen/offentlige-psykiatere", "Offentlige psykiatere", "Offentlige psykiatere med ydernummer findes via sundhed.dk.", `
-          <div class="resource-grid">
-            <article class="resource-card">
-              <h2>Find behandler på sundhed.dk</h2>
-              <p>Gå til sundhed.dk’s egen oversigt over Danmarks speciallæger, der tilhører det offentlige. Under ‘behandlere’ kan du vælge ‘psykiater’ og sortere efter bl.a. afstand, ventetid og om klinikken har åbent for nye patienter.</p>
-              ${externalLink("https://www.sundhed.dk/borger/guides/find-behandler/", "Åbn find behandler på sundhed.dk")}
-            </article>
-            <article class="resource-card">
-              <h2>Flow</h2>
-              <ul class="link-list">
-                <li>Henvisning sker ofte fra fx egen læge.</li>
-                <li>Offentlig psykiater betyder typisk psykiater med ydernummer.</li>
-                <li>Ventetider kan variere.</li>
-              </ul>
-            </article>
-          </div>
-          <div class="page-actions">${link("voksen/offentlige-psykiatere", "ressourcer", "Se også ressourcer, du kan bruge i ventetiden", "button button-secondary")}</div>
-          <aside class="disclaimer"><strong>Vigtig information</strong><p>Tjek altid sundhed.dk, egen læge eller den relevante klinik for aktuelle oplysninger.</p></aside>`, "Voksen");
-
+  writeSimplePage("find-psykiater/voksenpsykiater", "Voksenpsykiater", "Find offentlig eller privat psykiater for voksne.", cardGrid("find-psykiater/voksenpsykiater", [
+    ["Offentlige psykiatere", "Henvisning, ydernummer og link til sundhed.dk.", "find-psykiater/voksenpsykiater/offentlige-psykiatere"],
+    ["Private psykiatere", "Sorterbar tabel og information om selvbetaler og forsikring.", "find-psykiater/voksenpsykiater/private-psykiatere"]
+  ], true), "Find psykiater");
+  publicAdultPage();
   privatePsychiatristsPage();
 
-  writeSimplePage("boern-og-unge", "Børn og unge", "Oversigtsside for børne- og ungdomspsykiatri.", cardGrid("boern-og-unge", [
-    ["Nyttig info til forældre", "Samlet side til information, når den er klar.", "boern-og-unge/nyttig-info-til-foraeldre"],
-    ["Offentlige børne- og ungdomspsykiatere", "Find vej via sundhed.dk og speciallæger med ydernummer.", "boern-og-unge/offentlige-boerne-og-ungdomspsykiatere"],
-    ["Private børne- og ungdomspsykiatere", "Placeholder til kommende tabel.", "boern-og-unge/private-boerne-og-ungdomspsykiatere"]
-  ], true), "Børne- og ungdomspsykiatri");
+  writeSimplePage("find-psykiater/boerne-og-ungdomspsykiater", "Børne- og ungdomspsykiater", "Find information og indgange for børn og unge.", cardGrid("find-psykiater/boerne-og-ungdomspsykiater", [
+    ["Er du forælder?", "Denne side er under opbygning.", "find-psykiater/boerne-og-ungdomspsykiater/er-du-foraelder"],
+    ["Offentlige børne- og ungdomspsykiatere", "Find vej via sundhed.dk.", "find-psykiater/boerne-og-ungdomspsykiater/offentlige-boerne-og-ungdomspsykiatere"],
+    ["Private børne- og ungdomspsykiatere", "Tabel kommer senere.", "find-psykiater/boerne-og-ungdomspsykiater/private-boerne-og-ungdomspsykiatere"]
+  ], true), "Find psykiater");
+  writeSimplePage("find-psykiater/boerne-og-ungdomspsykiater/er-du-foraelder", "Er du forælder?", "Denne side er under opbygning.", placeholder("Er du forælder?"), "Børne- og ungdomspsykiater");
+  publicYouthPage();
+  privateYouthPage();
 
-  writeSimplePage("boern-og-unge/nyttig-info-til-foraeldre", "Nyttig info til forældre", "Denne side samler senere relevant information til forældre.", placeholder("Nyttig info til forældre"), "Børn og unge");
+  usefulLinksOverview();
+  acuteResourcesPage();
+  talkSoonPage();
+  usefulOverviewsPage();
+  associationsPage();
+  situationOverviewPage();
+  regionalOverviewPage();
 
-  writeSimplePage("boern-og-unge/offentlige-boerne-og-ungdomspsykiatere", "Find Børne- og ungdomspsykiater", "Offentlige børne- og ungdomspsykiatere findes via sundhed.dk.", `
-          <div class="resource-grid">
-            <article class="resource-card">
-              <h2>Find behandler på sundhed.dk</h2>
-              <p>Under ‘behandlere’ kan du vælge ‘Børne- og ungdomspsykiater’ og sortere efter bl.a. afstand, ventetid og åbent for nye patienter.</p>
-              ${externalLink("https://www.sundhed.dk/borger/guides/find-behandler/", "Åbn find behandler på sundhed.dk")}
-            </article>
-            <article class="resource-card">
-              <h2>Flow</h2>
-              <ul class="link-list">
-                <li>Henvisning sker ofte fra fx egen læge.</li>
-                <li>Offentlig børne- og ungdomspsykiater betyder speciallæge med ydernummer.</li>
-                <li>Ventetider kan variere.</li>
-              </ul>
-            </article>
-          </div>
-          <div class="page-actions">${link("boern-og-unge/offentlige-boerne-og-ungdomspsykiatere", "ressourcer", "Se relevante ressourcer i ventetiden", "button button-secondary")}</div>`, "Børn og unge");
+  writeSimplePage("information", "Information", "Forklarende sider om systemet omkring psykiatri, ydernummer, behandlingsgaranti og patientrettigheder.", cardGrid("information", informationPages.map(([slug, title]) => [
+    title,
+    "Denne informationsside er under opbygning.",
+    `information/${slug}`
+  ]), true), "Information");
+  informationPages.forEach(([slug, title]) => {
+    writeSimplePage(`information/${slug}`, title, "Denne side er under opbygning.", placeholder(title), "Information");
+  });
 
-  writeSimplePage("boern-og-unge/private-boerne-og-ungdomspsykiatere", "Private børne- og ungdomspsykiatere", "Tabel med private børne- og ungdomspsykiatere kommer snart.", `
-          ${placeholder("Private børne- og ungdomspsykiatere", "Tabel med private børne- og ungdomspsykiatere kommer snart.")}
-          <aside class="disclaimer spaced"><strong>Betaling og adgang</strong><p>Private psykiatere kan have forskellige betalingsformer. Nogle arbejder via forsikringsselskabers interne behandlingsnetværk, andre tager imod selvbetalere. Tjek altid pris, ventetid og henvisningskrav direkte hos klinikken.</p></aside>`, "Børn og unge");
-
-  writeSimplePage("ressourcer", "Ressourcer", "Find hjælp efter bopæl, region, kommune, tilbudsyder og problemstilling.", cardGrid("ressourcer", [
-    ["Hvor bor du?", "Start med regionernes og kommunernes tilbud.", "ressourcer/regioner"],
-    ["Regionernes tilbud", "Oversigt over regionale tilbud og akutindgange.", "ressourcer/regioner"],
-    ["Kommunernes tilbud", "Placeholder til kommunale indgange.", "ressourcer/kommuner"],
-    ["Andre tilbudsydere", "Åbne tilbud fra frivillige organisationer og landsdækkende aktører.", "ressourcer/andre-tilbudsydere"],
-    ["Problemstillinger", "Ressourcer grupperet efter situation og målgruppe.", "ressourcer/problemstillinger"]
-  ]), "Ressourcer");
-
-  writeSimplePage("ressourcer/regioner", "Regionernes tilbud", "Vælg region for at se regionale tilbud til psykisk og psykiatrisk hjælp.", cardGrid("ressourcer/regioner", regionPages.map(([slug, name]) => [`Psykisk hjælp i ${name}`, "Regionale akuttilbud, rådgivninger og åbne hjælpetilbud.", `ressourcer/regioner/${slug}`, `Åbn ${name}`])), "Ressourcer");
-  regionPages.forEach(([slug, name, dataFile]) => regionResourcePage(slug, name, dataFile));
-
-  writeSimplePage("ressourcer/kommuner", "Kommunernes tilbud", "Kommunale tilbud kan handle om social støtte, rådgivning, væresteder og lokale indsatser.", cardGrid("ressourcer/kommuner", kommunePages.map(([slug, name]) => [name, "Denne kommuneside er under opbygning.", `ressourcer/kommuner/${slug}`])), "Ressourcer");
-  kommunePages.forEach(([slug, name]) => writeSimplePage(`ressourcer/kommuner/${slug}`, name, "Kommuneside under opbygning.", placeholder(name), "Kommunernes tilbud"));
-
-  writeSimplePage("ressourcer/andre-tilbudsydere", "Andre tilbudsydere", "Her samles åbne tilbud fra frivillige organisationer og andre landsdækkende aktører.", placeholder("Andre tilbudsydere", "Her samles åbne tilbud fra frivillige organisationer og andre landsdækkende aktører."), "Ressourcer");
-
-  writeSimplePage("ressourcer/problemstillinger", "Problemstillinger", "Find kommende ressourcesider efter situation og målgruppe.", cardGrid("ressourcer/problemstillinger", problemPages.map(([slug, title]) => [title, "Denne side er under opbygning.", `ressourcer/problemstillinger/${slug}`])), "Ressourcer");
-  problemPages.forEach(([slug, title]) => writeSimplePage(`ressourcer/problemstillinger/${slug}`, title, "Denne side er under opbygning.", placeholder(title), "Problemstillinger"));
-
-  writeSimplePage("information", "Information", "Forklarende sider om systemet omkring psykiatri, rettigheder og centrale hjælpere.", cardGrid("information", informationPages.map(([slug, title]) => [title, "Denne informationsside er under opbygning.", `information/${slug}`])), "Information");
-  informationPages.forEach(([slug, title]) => writeSimplePage(`information/${slug}`, title, "Denne side er under opbygning.", placeholder(title), "Information"));
-
-  writeSimplePage("om", "Om", "Læs om motivation, disclaimer, kontakt og privatliv.", cardGrid("om", [
+  writeSimplePage("om", "Om", "Læs om motivation, disclaimer, kontakt og privatlivspolitik.", cardGrid("om", [
     ["Motivation", "Hvorfor siden findes.", "om/motivation"],
     ["Disclaimer", "Vigtige forbehold om information og akut hjælp.", "om/disclaimer"],
     ["Kontakt", "Kontaktinformation kommer senere.", "om/kontakt"],
-    ["Privatlivspolitik", "Foreløbig privatlivstekst.", "om/privatlivspolitik"],
-    ["Støt siden", "Støt arbejdet med Psykiater Overblik via Buy Me a Coffee.", "om/stoet-siden"]
+    ["Privatlivspolitik", "Foreløbig privatlivstekst.", "om/privatlivspolitik"]
   ], true), "Om");
   writeSimplePage("om/motivation", "Motivation", "Denne side er under opbygning.", placeholder("Motivation"), "Om");
   writeSimplePage("om/disclaimer", "Disclaimer", "Vigtige forbehold om Psykiater Overblik.", `
@@ -505,44 +758,15 @@ function buildPages() {
   writeSimplePage("om/kontakt", "Kontakt", "Kontaktinformation kommer senere.", placeholder("Kontakt", "Kontaktinformation kommer senere."), "Om");
   writeSimplePage("om/privatlivspolitik", "Privatlivspolitik", "Foreløbig privatlivspolitik for Psykiater Overblik.", `
           <div class="placeholder-note">
-            <p>Siden indsamler ikke følsomme helbredsoplysninger via formularer. Hvis der senere tilføjes analytics, cookies eller reklamer, bør denne tekst gennemgås og opdateres, før løsningen offentliggøres bredt.</p>
+            <p>Siden indsamler ikke følsomme helbredsoplysninger via formularer. Links til eksterne tjenester, fx Buy Me a Coffee, kan være omfattet af tredjepartens egne vilkår og privatlivspolitik.</p>
           </div>`, "Om");
-  writeSimplePage("om/stoet-siden", "Støt siden", "Psykiater Overblik er et uafhængigt informationssite. Du kan støtte arbejdet via Buy Me a Coffee.", `
-          <div class="resource-card">
-            <h2>Støt Psykiater Overblik</h2>
-            <p>Hvis siden hjælper dig, kan du støtte det videre arbejde med vedligeholdelse, struktur og kvalitetssikring. Støtte er frivillig og giver ikke adgang til rådgivning eller prioriteret hjælp.</p>
-            <a class="button button-primary" href="${supportUrl}" target="_blank" rel="noopener noreferrer">Støt via Buy Me a Coffee</a>
-          </div>
-          <aside class="disclaimer spaced">
-            <strong>Vigtig information</strong>
-            <p>Psykiater Overblik er et uafhængigt informationssite og erstatter ikke læge, akut hjælp eller professionel rådgivning.</p>
-          </aside>`, "Om", "Støt Psykiater Overblik via Buy Me a Coffee.");
-
-  writeSimplePage("brug-for-hjaelp-nu", "Brug for hjælp NU / krise", "Side til akutte situationer og hurtige indgange.", `
-          <aside class="crisis-box">
-            <strong>Akut fare</strong>
-            <p>Ring 112 ved akut fare for liv eller sikkerhed.</p>
-          </aside>
-          <div class="resource-grid">
-            <article class="resource-card">
-              <h2>Lægevagt, 1813 eller skadestue</h2>
-              <p>Kontakt lægevagt, 1813 eller skadestue afhængigt af region og situation. 1813 gælder Region Hovedstaden; andre regioner har egne lægevagtsordninger.</p>
-            </article>
-            <article class="resource-card">
-              <h2>Telefonrådgivninger</h2>
-              <p>Telefonrådgivninger kan bruges ved psykisk krise eller behov for nogen at tale med.</p>
-            </article>
-          </div>
-          <div class="page-actions">
-            ${link("brug-for-hjaelp-nu", "ressourcer/problemstillinger/akut-krise", "Gå til akut krise", "button button-primary")}
-            ${link("brug-for-hjaelp-nu", "ressourcer", "Se ressourcesider", "button button-secondary")}
-          </div>`, "Krisehjælp", "Akut side med 112, lægevagt, skadestue og telefonrådgivninger ved psykisk krise.");
 
   fs.writeFileSync(path.join(root, "404.html"), layout({
     route: "",
     title: "Siden blev ikke fundet",
     description: "Siden blev ikke fundet.",
-    body: pageHero({
+    includeInSitemap: false,
+    body: pageShell({
       eyebrow: "404",
       heading: "Siden blev ikke fundet",
       intro: "Linket findes ikke eller er blevet flyttet."
@@ -555,6 +779,13 @@ ${pageRoutes.map((route) => `  <url><loc>${siteUrl}${route ? `/${route}/` : "/"}
 </urlset>
 `;
   fs.writeFileSync(path.join(root, "sitemap.xml"), sitemap);
+
+  const robots = `User-agent: *
+Allow: /
+
+Sitemap: ${siteUrl}/sitemap.xml
+`;
+  fs.writeFileSync(path.join(root, "robots.txt"), robots);
 }
 
 buildPages();
