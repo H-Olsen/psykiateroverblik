@@ -1008,11 +1008,13 @@ select {
     position: absolute;
     top: 66px;
     right: 16px;
-    left: auto;
+    left: 16px;
     display: none;
     align-items: stretch;
+    justify-content: stretch;
+    justify-items: stretch;
     gap: 8px;
-    width: min(520px, calc(100vw - 32px));
+    width: auto;
     max-height: calc(100vh - 82px);
     overflow-y: auto;
     overscroll-behavior: contain;
@@ -1025,16 +1027,19 @@ select {
 
   .primary-nav.is-open {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .nav-group {
     display: grid;
     gap: 4px;
+    width: 100%;
   }
 
   .primary-nav a,
   .nav-parent {
     justify-content: flex-start;
+    width: 100%;
     min-height: 44px;
     white-space: normal;
   }
@@ -1129,7 +1134,7 @@ select {
 @media (max-width: 760px) {
   .primary-nav {
     right: 10px;
-    width: calc(100vw - 20px);
+    left: 10px;
   }
 
   .container,
